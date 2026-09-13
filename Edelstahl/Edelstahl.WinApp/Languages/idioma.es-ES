@@ -1,0 +1,86 @@
+﻿TituloAplicacion:Edelstahl ERP
+ModuloVentas:Gestión Comercial - Ventas
+Idioma:Idioma
+NombreEspanolArgentina:Español (Argentina)
+NombreEspanolEspana:Español (España)
+NombreInglesEstadosUnidos:English (United States)
+NombreInglesReinoUnido:English (United Kingdom)
+NombrePortuguesBrasil:Português (Brasil)
+NombreAleman:Deutsch
+NombreRuso:Русский
+VentasPedidos:Ventas y pedidos
+Produccion:Producción
+ComprasStock:Compras / Existencias
+Logistica:Logística
+Finanzas:Finanzas
+AtencionCliente:Atención al cliente
+ConfirmarPedido:Confirmar pedido
+Cliente:Cliente
+Presupuesto:Presupuesto
+Productos:Productos
+Validacion:Validación
+Sena:Anticipo
+Confirmacion:Confirmación
+Resultado:Resultado
+Buscar:Buscar
+Actualizar:Actualizar
+NuevaOperacion:Nueva operación
+QuitarPresupuesto:Quitar presupuesto
+VerComprobante:Ver comprobante
+GuardarCliente:Guardar cliente
+NuevoCliente:Nuevo cliente
+SeleccionarCliente:Seleccionar cliente
+SeleccionarPresupuesto:Seleccionar presupuesto
+RegistrarSena:Registrar anticipo
+Refrescar:Actualizar
+Limpiar:Limpiar
+Cancelar:Cancelar
+Aceptar:Aceptar
+Cerrar:Cerrar
+Estado:Estado
+EstadoPendiente:Estado pendiente
+PedidoConfirmado:Pedido confirmado
+AnticipoRequerido:Anticipo requerido
+ListoConfirmar:Listo para confirmar
+SinSeleccionar:Sin seleccionar
+CreditoDisponible:Crédito disponible
+Subtotal:Subtotal
+IVA:IVA
+Anticipo:Anticipo
+AnticipoRegistrado:Anticipo registrado
+SaldoFacturar:Saldo pendiente de facturar
+Items:Artículos
+Total:TOTAL
+Codigo:Código
+Descripcion:Descripción
+Cantidad:Cantidad
+Precio:Precio
+Numero:Número
+Fecha:Fecha
+Usuario:Usuario
+RazonSocial:Razón social
+CUIT:Identificación fiscal
+Correo:Correo electrónico
+Telefono:Teléfono
+Localidad:Localidad
+Provincia:Provincia
+CodigoPostal:Código postal
+LimiteCredito:Límite de crédito
+DeudaActual:Deuda actual
+Activo:Activo
+MedioPago:Medio de pago
+NumeroComprobante:Número de comprobante
+FechaPago:Fecha de pago
+PresupuestosDisponibles:Presupuestos disponibles
+ClientesRegistrados:Clientes registrados
+GestionClientes:Gestión de clientes
+DatosCliente:Datos del cliente
+ImporteRecibido:Importe recibido
+ComprobantePedido:Comprobante de pedido
+InformacionComercial:Información comercial
+CondicionPago:Condición de pago
+PlazoEntrega:Plazo de entrega
+EntregaIncluida:Entrega incluida
+Observaciones:Observaciones
+Si:Sí
+No:No

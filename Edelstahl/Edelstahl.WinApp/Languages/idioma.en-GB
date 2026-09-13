@@ -1,0 +1,87 @@
+﻿TituloAplicacion:Edelstahl ERP
+ModuloVentas:Commercial Management - Sales
+Idioma:Language
+NombreEspanolArgentina:Español (Argentina)
+NombreEspanolEspana:Español (España)
+NombreInglesEstadosUnidos:English (United States)
+NombreInglesReinoUnido:English (United Kingdom)
+NombrePortuguesBrasil:Português (Brasil)
+NombreAleman:Deutsch
+NombreRuso:Русский
+VentasPedidos:Sales and Orders
+Produccion:Production
+ComprasStock:Purchasing / Stock
+Logistica:Logistics
+Finanzas:Finance
+AtencionCliente:Customer Service
+ConfirmarPedido:Confirm Order
+Cliente:Customer
+Presupuesto:Quotation
+Productos:Products
+Validacion:Validation
+Sena:Deposit
+Confirmacion:Confirmation
+Resultado:Result
+Buscar:Search
+Actualizar:Refresh
+NuevaOperacion:New Operation
+QuitarPresupuesto:Remove Quotation
+VerComprobante:View Document
+GuardarCliente:Save Customer
+NuevoCliente:New Customer
+SeleccionarCliente:Select Customer
+SeleccionarPresupuesto:Select Quotation
+RegistrarSena:Register Deposit
+Refrescar:Refresh
+Limpiar:Clear
+Cancelar:Cancel
+Aceptar:OK
+Cerrar:Close
+Estado:Status
+EstadoPendiente:Pending
+PedidoConfirmado:Order Confirmed
+AnticipoRequerido:Deposit Required
+ListoConfirmar:Ready to Confirm
+SinSeleccionar:Not Selected
+CreditoDisponible:Available Credit
+Subtotal:Subtotal
+IVA:VAT
+Anticipo:Deposit
+AnticipoRegistrado:Registered Deposit
+SaldoFacturar:Balance to Invoice
+Items:Items
+Total:TOTAL
+Codigo:Code
+Descripcion:Description
+Cantidad:Quantity
+Precio:Price
+Numero:Number
+Fecha:Date
+Usuario:User
+RazonSocial:Company Name
+CUIT:Tax ID
+Correo:Email
+Telefono:Telephone
+Localidad:Town
+Provincia:County
+CodigoPostal:Postcode
+LimiteCredito:Credit Limit
+DeudaActual:Current Debt
+Activo:Active
+MedioPago:Payment Method
+NumeroComprobante:Receipt Number
+FechaPago:Payment Date
+PresupuestosDisponibles:Available Quotations
+ClientesRegistrados:Registered Customers
+GestionClientes:Customer Management
+DatosCliente:Customer Details
+ImporteRecibido:Amount Received
+ComprobantePedido:Order Document
+InformacionComercial:Commercial Information
+CondicionPago:Payment Terms
+PlazoEntrega:Delivery Time
+EntregaIncluida:Delivery Included
+Observaciones:Notes
+Si:Yes
+No:No
+`

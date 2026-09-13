@@ -1,0 +1,86 @@
+﻿TituloAplicacion:Edelstahl ERP
+ModuloVentas:Коммерческое управление - Продажи
+Idioma:Язык
+NombreEspanolArgentina:Español (Argentina)
+NombreEspanolEspana:Español (España)
+NombreInglesEstadosUnidos:English (United States)
+NombreInglesReinoUnido:English (United Kingdom)
+NombrePortuguesBrasil:Português (Brasil)
+NombreAleman:Deutsch
+NombreRuso:Русский
+VentasPedidos:Продажи и заказы
+Produccion:Производство
+ComprasStock:Закупки / Склад
+Logistica:Логистика
+Finanzas:Финансы
+AtencionCliente:Обслуживание клиентов
+ConfirmarPedido:Подтвердить заказ
+Cliente:Клиент
+Presupuesto:Предложение
+Productos:Товары
+Validacion:Проверка
+Sena:Предоплата
+Confirmacion:Подтверждение
+Resultado:Результат
+Buscar:Поиск
+Actualizar:Обновить
+NuevaOperacion:Новая операция
+QuitarPresupuesto:Удалить предложение
+VerComprobante:Просмотреть документ
+GuardarCliente:Сохранить клиента
+NuevoCliente:Новый клиент
+SeleccionarCliente:Выбрать клиента
+SeleccionarPresupuesto:Выбрать предложение
+RegistrarSena:Зарегистрировать предоплату
+Refrescar:Обновить
+Limpiar:Очистить
+Cancelar:Отмена
+Aceptar:Принять
+Cerrar:Закрыть
+Estado:Статус
+EstadoPendiente:Ожидание
+PedidoConfirmado:Заказ подтверждён
+AnticipoRequerido:Требуется предоплата
+ListoConfirmar:Готово к подтверждению
+SinSeleccionar:Не выбрано
+CreditoDisponible:Доступный кредит
+Subtotal:Промежуточный итог
+IVA:НДС
+Anticipo:Предоплата
+AnticipoRegistrado:Зарегистрированная предоплата
+SaldoFacturar:Остаток к выставлению
+Items:Позиции
+Total:ИТОГО
+Codigo:Код
+Descripcion:Описание
+Cantidad:Количество
+Precio:Цена
+Numero:Номер
+Fecha:Дата
+Usuario:Пользователь
+RazonSocial:Название компании
+CUIT:Налоговый номер
+Correo:Электронная почта
+Telefono:Телефон
+Localidad:Город
+Provincia:Регион
+CodigoPostal:Почтовый индекс
+LimiteCredito:Кредитный лимит
+DeudaActual:Текущая задолженность
+Activo:Активен
+MedioPago:Способ оплаты
+NumeroComprobante:Номер документа
+FechaPago:Дата оплаты
+PresupuestosDisponibles:Доступные предложения
+ClientesRegistrados:Зарегистрированные клиенты
+GestionClientes:Управление клиентами
+DatosCliente:Данные клиента
+ImporteRecibido:Полученная сумма
+ComprobantePedido:Документ заказа
+InformacionComercial:Коммерческая информация
+CondicionPago:Условия оплаты
+PlazoEntrega:Срок поставки
+EntregaIncluida:Доставка включена
+Observaciones:Примечания
+Si:Да
+No:Нет

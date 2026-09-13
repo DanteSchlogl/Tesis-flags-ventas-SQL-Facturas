@@ -1,0 +1,86 @@
+﻿TituloAplicacion:Edelstahl ERP
+ModuloVentas:Gestão Comercial - Vendas
+Idioma:Idioma
+NombreEspanolArgentina:Español (Argentina)
+NombreEspanolEspana:Español (España)
+NombreInglesEstadosUnidos:English (United States)
+NombreInglesReinoUnido:English (United Kingdom)
+NombrePortuguesBrasil:Português (Brasil)
+NombreAleman:Deutsch
+NombreRuso:Русский
+VentasPedidos:Vendas e Pedidos
+Produccion:Produção
+ComprasStock:Compras / Estoque
+Logistica:Logística
+Finanzas:Finanças
+AtencionCliente:Atendimento ao Cliente
+ConfirmarPedido:Confirmar Pedido
+Cliente:Cliente
+Presupuesto:Orçamento
+Productos:Produtos
+Validacion:Validação
+Sena:Entrada
+Confirmacion:Confirmação
+Resultado:Resultado
+Buscar:Pesquisar
+Actualizar:Atualizar
+NuevaOperacion:Nova Operação
+QuitarPresupuesto:Remover Orçamento
+VerComprobante:Ver Comprovante
+GuardarCliente:Salvar Cliente
+NuevoCliente:Novo Cliente
+SeleccionarCliente:Selecionar Cliente
+SeleccionarPresupuesto:Selecionar Orçamento
+RegistrarSena:Registrar Entrada
+Refrescar:Atualizar
+Limpiar:Limpar
+Cancelar:Cancelar
+Aceptar:Aceitar
+Cerrar:Fechar
+Estado:Status
+EstadoPendiente:Pendente
+PedidoConfirmado:Pedido Confirmado
+AnticipoRequerido:Entrada Necessária
+ListoConfirmar:Pronto para Confirmar
+SinSeleccionar:Não Selecionado
+CreditoDisponible:Crédito Disponível
+Subtotal:Subtotal
+IVA:Imposto
+Anticipo:Entrada
+AnticipoRegistrado:Entrada Registrada
+SaldoFacturar:Saldo a Faturar
+Items:Itens
+Total:TOTAL
+Codigo:Código
+Descripcion:Descrição
+Cantidad:Quantidade
+Precio:Preço
+Numero:Número
+Fecha:Data
+Usuario:Usuário
+RazonSocial:Razão Social
+CUIT:Identificação Fiscal
+Correo:E-mail
+Telefono:Telefone
+Localidad:Cidade
+Provincia:Estado
+CodigoPostal:CEP
+LimiteCredito:Limite de Crédito
+DeudaActual:Dívida Atual
+Activo:Ativo
+MedioPago:Forma de Pagamento
+NumeroComprobante:Número do Comprovante
+FechaPago:Data do Pagamento
+PresupuestosDisponibles:Orçamentos Disponíveis
+ClientesRegistrados:Clientes Cadastrados
+GestionClientes:Gestão de Clientes
+DatosCliente:Dados do Cliente
+ImporteRecibido:Valor Recebido
+ComprobantePedido:Comprovante do Pedido
+InformacionComercial:Informações Comerciais
+CondicionPago:Condição de Pagamento
+PlazoEntrega:Prazo de Entrega
+EntregaIncluida:Entrega Incluída
+Observaciones:Observações
+Si:Sim
+No:Não

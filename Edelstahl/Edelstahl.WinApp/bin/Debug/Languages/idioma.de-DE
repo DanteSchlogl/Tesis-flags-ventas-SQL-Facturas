@@ -1,0 +1,86 @@
+﻿TituloAplicacion:Edelstahl ERP
+ModuloVentas:Kaufmännische Verwaltung - Vertrieb
+Idioma:Sprache
+NombreEspanolArgentina:Español (Argentina)
+NombreEspanolEspana:Español (España)
+NombreInglesEstadosUnidos:English (United States)
+NombreInglesReinoUnido:English (United Kingdom)
+NombrePortuguesBrasil:Português (Brasil)
+NombreAleman:Deutsch
+NombreRuso:Русский
+VentasPedidos:Verkauf und Bestellungen
+Produccion:Produktion
+ComprasStock:Einkauf / Lager
+Logistica:Logistik
+Finanzas:Finanzen
+AtencionCliente:Kundenservice
+ConfirmarPedido:Bestellung bestätigen
+Cliente:Kunde
+Presupuesto:Angebot
+Productos:Produkte
+Validacion:Validierung
+Sena:Anzahlung
+Confirmacion:Bestätigung
+Resultado:Ergebnis
+Buscar:Suchen
+Actualizar:Aktualisieren
+NuevaOperacion:Neuer Vorgang
+QuitarPresupuesto:Angebot entfernen
+VerComprobante:Beleg anzeigen
+GuardarCliente:Kunden speichern
+NuevoCliente:Neuer Kunde
+SeleccionarCliente:Kunden auswählen
+SeleccionarPresupuesto:Angebot auswählen
+RegistrarSena:Anzahlung erfassen
+Refrescar:Aktualisieren
+Limpiar:Leeren
+Cancelar:Abbrechen
+Aceptar:Bestätigen
+Cerrar:Schließen
+Estado:Status
+EstadoPendiente:Ausstehend
+PedidoConfirmado:Bestellung bestätigt
+AnticipoRequerido:Anzahlung erforderlich
+ListoConfirmar:Bereit zur Bestätigung
+SinSeleccionar:Nicht ausgewählt
+CreditoDisponible:Verfügbarer Kredit
+Subtotal:Zwischensumme
+IVA:Mehrwertsteuer
+Anticipo:Anzahlung
+AnticipoRegistrado:Erfasste Anzahlung
+SaldoFacturar:Zu berechnender Restbetrag
+Items:Positionen
+Total:GESAMT
+Codigo:Code
+Descripcion:Beschreibung
+Cantidad:Menge
+Precio:Preis
+Numero:Nummer
+Fecha:Datum
+Usuario:Benutzer
+RazonSocial:Firmenname
+CUIT:Steuernummer
+Correo:E-Mail
+Telefono:Telefon
+Localidad:Ort
+Provincia:Bundesland
+CodigoPostal:Postleitzahl
+LimiteCredito:Kreditlimit
+DeudaActual:Aktuelle Schulden
+Activo:Aktiv
+MedioPago:Zahlungsmethode
+NumeroComprobante:Belegnummer
+FechaPago:Zahlungsdatum
+PresupuestosDisponibles:Verfügbare Angebote
+ClientesRegistrados:Registrierte Kunden
+GestionClientes:Kundenverwaltung
+DatosCliente:Kundendaten
+ImporteRecibido:Erhaltener Betrag
+ComprobantePedido:Bestellbeleg
+InformacionComercial:Geschäftsinformationen
+CondicionPago:Zahlungsbedingungen
+PlazoEntrega:Lieferzeit
+EntregaIncluida:Lieferung enthalten
+Observaciones:Anmerkungen
+Si:Ja
+No:Nein

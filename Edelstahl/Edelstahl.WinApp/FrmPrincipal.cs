@@ -1,0 +1,89 @@
+﻿using Edelstahl.Services.Localization;
+using Edelstahl.WinApp.Forms;
+using Edelstahl.WinApp.Forms.Commercial;
+using System;
+using System.Windows.Forms;
+
+
+namespace Edelstahl.WinApp
+{
+    public partial class FrmPrincipal : Form
+    {
+        public FrmPrincipal()
+        {
+            InitializeComponent();
+        }
+
+
+        private void FrmPrincipal_Load(
+    object sender,
+    EventArgs e)
+        {
+            MessageBox.Show(
+                LanguageService.Translate(
+                    "Cliente",
+                    "en-US"));
+        }
+        //private void FrmPrincipal_Load(object sender, EventArgs e)
+        //{
+        // Inicialización del formulario principal.
+        //}
+
+        private void menuStrip1_ItemClicked(
+            object sender,
+            ToolStripItemClickedEventArgs e)
+        {
+            // Evento general del menú.
+        }
+
+        private void mnuClientes_Click(
+            object sender,
+            EventArgs e)
+        {
+            foreach (Form formularioAbierto in MdiChildren)
+            {
+                if (formularioAbierto is FrmClientes)
+                {
+                    formularioAbierto.Activate();
+                    return;
+                }
+            }
+
+            FrmClientes formulario = new FrmClientes
+            {
+                MdiParent = this,
+                WindowState = FormWindowState.Maximized
+            };
+
+            formulario.Show();
+        }
+
+        private void mnuConfirmarPedido_Click(object sender, EventArgs e)
+        {
+            foreach (Form formularioAbierto in MdiChildren)
+            {
+                if (formularioAbierto is FrmConfirmarPedido)
+                {
+                    formularioAbierto.Activate();
+                    return;
+                }
+            }
+
+            FrmConfirmarPedido formulario = new FrmConfirmarPedido
+            {
+                MdiParent = this,
+                WindowState = FormWindowState.Maximized
+            };
+
+            formulario.Show();
+        }
+
+        private void importarClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmImportarClientes formulario = new FrmImportarClientes();
+
+            formulario.ShowDialog();
+        }
+
+    }
+}
