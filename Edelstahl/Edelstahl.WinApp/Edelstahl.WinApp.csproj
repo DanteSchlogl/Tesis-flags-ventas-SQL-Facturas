@@ -96,6 +96,12 @@
     <Compile Include="Forms\FrmImportarClientes.Designer.cs">
       <DependentUpon>FrmImportarClientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCrearAdministradorInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,14 +116,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Content Include="Resources\Flags\flag_ar.png.png" />
-    <Content Include="Resources\Flags\flag_br.png.png" />
-    <Content Include="Resources\Flags\flag_de.png.png" />
-    <Content Include="Resources\Flags\flag_es.png.png" />
-    <Content Include="Resources\Flags\flag_gb.png.png" />
-    <Content Include="Resources\Flags\flag_ru.png.png" />
-    <Content Include="Resources\Flags\flag_us.png.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="Resources\Flags\flag_ar.png" />
+    <Content Include="Resources\Flags\flag_br.png" />
+    <Content Include="Resources\Flags\flag_de.png" />
+    <Content Include="Resources\Flags\flag_es.png" />
+    <Content Include="Resources\Flags\flag_gb.png" />
+    <Content Include="Resources\Flags\flag_ru.png" />
+    <Content Include="Resources\Flags\flag_us.png" />
+    <Content Include="Resources\Login\logo_login.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <EmbeddedResource Include="Forms\Commercial\FrmClientes.resx">
       <DependentUpon>FrmClientes.cs</DependentUpon>
@@ -140,6 +147,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Content Include="bin\Debug\Edelstahl.WinApp.exe" />
+    <Content Include="bin\Debug\Edelstahl.WinApp.pdb" />
     <Content Include="Languages\idioma.de-DE">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -161,6 +170,8 @@
     <Content Include="Languages\idioma.ru-RU">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include=".vs\Edelstahl.WinApp.csproj.dtbcache.json" />
+    <None Include="bin\Debug\Edelstahl.WinApp.exe.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -191,8 +202,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\Release\" />
     <Folder Include="Forms\Common\" />
-    <Folder Include="Forms\Security\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
