@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 
 
-
 namespace Edelstahl.DAL.Tools
 {
     /// <summary>
@@ -17,7 +16,7 @@ namespace Edelstahl.DAL.Tools
     {
         private const string BusinessConnectionString =
             @"Data Source=localhost\SQLEXPRESS;
-              Initial Catalog=Edelstahl;
+              Initial Catalog=EdelstahlNegocio;
               Integrated Security=True";
 
         private const string ServicesConnectionString =
@@ -25,33 +24,29 @@ namespace Edelstahl.DAL.Tools
               Initial Catalog=EdelstahlServicios;
               Integrated Security=True";
 
-        /// <summary>
-        /// Crea una conexión con la base de datos del negocio.
-        /// Esta conexión se conserva temporalmente para mantener
-        /// compatibles los repositorios actuales.
-        /// </summary>
+        private const string MasterConnectionString =
+            @"Data Source=localhost\SQLEXPRESS;
+              Initial Catalog=master;
+              Integrated Security=True";
+
         public static SqlConnection CreateConnection()
         {
             return CreateBusinessConnection();
         }
 
-        /// <summary>
-        /// Crea una conexión con la base de datos de negocio.
-        /// </summary>
         public static SqlConnection CreateBusinessConnection()
         {
-            return new SqlConnection(
-                BusinessConnectionString);
+            return new SqlConnection(BusinessConnectionString);
         }
 
-        /// <summary>
-        /// Crea una conexión con la base de datos de servicios:
-        /// usuarios, roles, seguridad y bitácora.
-        /// </summary>
         public static SqlConnection CreateServicesConnection()
         {
-            return new SqlConnection(
-                ServicesConnectionString);
+            return new SqlConnection(ServicesConnectionString);
+        }
+
+        public static SqlConnection CreateMasterConnection()
+        {
+            return new SqlConnection(MasterConnectionString);
         }
     }
 }

@@ -126,7 +126,7 @@ namespace Edelstahl.DAL.Implementations.SqlServer
                 " FROM dbo.Roles ORDER BY Nombre";
 
             using (SqlConnection connection =
-                SqlServerConnection.CreateConnection())
+                SqlServerConnection.CreateServicesConnection())
             {
                 connection.Open();
 
@@ -172,7 +172,7 @@ namespace Edelstahl.DAL.Implementations.SqlServer
                 @"SELECT COUNT(1) FROM dbo.Roles WHERE Nombre = @Nombre";
 
             using (SqlConnection connection =
-                SqlServerConnection.CreateConnection())
+                SqlServerConnection.CreateServicesConnection())
             {
                 connection.Open();
 
@@ -192,7 +192,7 @@ namespace Edelstahl.DAL.Implementations.SqlServer
             Action<SqlCommand> configurar)
         {
             using (SqlConnection connection =
-                SqlServerConnection.CreateConnection())
+                SqlServerConnection.CreateServicesConnection())
             {
                 connection.Open();
 
@@ -214,7 +214,7 @@ namespace Edelstahl.DAL.Implementations.SqlServer
             bool exigirFila)
         {
             using (SqlConnection connection =
-                SqlServerConnection.CreateConnection())
+                SqlServerConnection.CreateServicesConnection())
             {
                 connection.Open();
 

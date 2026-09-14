@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Backup\RespaldoDatabaseService.cs" />
     <Compile Include="EntityFramework\ClienteConfiguration.cs" />
     <Compile Include="EntityFramework\DetallePedidoConfiguration.cs" />
     <Compile Include="EntityFramework\DetallePresupuestoConfiguration.cs" />

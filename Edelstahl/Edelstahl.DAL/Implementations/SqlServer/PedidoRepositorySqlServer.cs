@@ -43,7 +43,7 @@ namespace Edelstahl.DAL.Implementations.SqlServer
             }
 
             using (SqlConnection connection =
-                SqlServerConnection.CreateConnection())
+                SqlServerConnection.CreateServicesConnection())
             {
                 connection.Open();
 

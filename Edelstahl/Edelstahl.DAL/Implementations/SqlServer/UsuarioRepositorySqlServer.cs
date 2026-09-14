@@ -120,7 +120,7 @@ namespace Edelstahl.DAL.Implementations.SqlServer
                 @"UPDATE dbo.Usuarios SET Activo = 0 WHERE Id = @Id";
 
             using (SqlConnection connection =
-                SqlServerConnection.CreateConnection())
+                SqlServerConnection.CreateServicesConnection())
             {
                 connection.Open();
 
@@ -271,7 +271,7 @@ namespace Edelstahl.DAL.Implementations.SqlServer
             Action<SqlCommand> configurar)
         {
             using (SqlConnection connection =
-                SqlServerConnection.CreateConnection())
+                SqlServerConnection.CreateServicesConnection())
             {
                 connection.Open();
 
@@ -294,7 +294,7 @@ namespace Edelstahl.DAL.Implementations.SqlServer
             List<Usuario> usuarios = new List<Usuario>();
 
             using (SqlConnection connection =
-                SqlServerConnection.CreateConnection())
+                SqlServerConnection.CreateServicesConnection())
             {
                 connection.Open();
 
@@ -324,7 +324,7 @@ namespace Edelstahl.DAL.Implementations.SqlServer
             bool exigirFila)
         {
             using (SqlConnection connection =
-                SqlServerConnection.CreateConnection())
+                SqlServerConnection.CreateServicesConnection())
             {
                 connection.Open();
 

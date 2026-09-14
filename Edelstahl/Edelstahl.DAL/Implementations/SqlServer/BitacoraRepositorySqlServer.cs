@@ -150,7 +150,7 @@ namespace Edelstahl.DAL.Implementations.SqlServer
         {
             List<RegistroBitacora> registros = new List<RegistroBitacora>();
 
-            using (SqlConnection connection = SqlServerConnection.CreateConnection())
+            using (SqlConnection connection = SqlServerConnection.CreateServicesConnection())
             {
                 connection.Open();
                 using (SqlCommand command = new SqlCommand(sql, connection))
