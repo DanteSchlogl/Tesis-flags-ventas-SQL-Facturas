@@ -3,59 +3,51 @@
   "WorkspaceRootPath": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.winapp\\frmprincipalv2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|solutionrelative:edelstahl.winapp\\frmprincipalv2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|c:\\users\\dana eilin\\documents\\softwareedelstahl-main\\softwareedelstahl\\edelstahl\\edelstahl.winapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|solutionrelative:edelstahl.winapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.winapp\\frmprincipalv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|solutionrelative:edelstahl.winapp\\frmprincipalv2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{43EE47A6-29B6-435F-A28D-1C8C6F190E6E}|Edelstahl.Services\\Edelstahl.Services.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.services\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43EE47A6-29B6-435F-A28D-1C8C6F190E6E}|Edelstahl.Services\\Edelstahl.Services.csproj|solutionrelative:edelstahl.services\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dana Eilin\\Downloads\\FrmPrincipalV2 (3).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{43EE47A6-29B6-435F-A28D-1C8C6F190E6E}|Edelstahl.Services\\Edelstahl.Services.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.services\\localization\\languageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{43EE47A6-29B6-435F-A28D-1C8C6F190E6E}|Edelstahl.Services\\Edelstahl.Services.csproj|solutionrelative:edelstahl.services\\localization\\languageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.winapp\\languages\\idioma.ru-ru||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|solutionrelative:edelstahl.winapp\\languages\\idioma.ru-ru||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.winapp\\languages\\idioma.es-es||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|solutionrelative:edelstahl.winapp\\languages\\idioma.es-es||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{6D81C64F-0027-47A6-9B46-A54C2999458E}|Edelstahl.Domain\\Edelstahl.Domain.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.domain\\security\\pruebasecurity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D81C64F-0027-47A6-9B46-A54C2999458E}|Edelstahl.Domain\\Edelstahl.Domain.csproj|solutionrelative:edelstahl.domain\\security\\pruebasecurity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{04DD06EF-1575-49A8-B4CB-256177F9ADF4}|Edelstahl.DAL\\Edelstahl.DAL.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.dal\\interfaces\\ipedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04DD06EF-1575-49A8-B4CB-256177F9ADF4}|Edelstahl.DAL\\Edelstahl.DAL.csproj|solutionrelative:edelstahl.dal\\interfaces\\ipedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6D81C64F-0027-47A6-9B46-A54C2999458E}|Edelstahl.Domain\\Edelstahl.Domain.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.domain\\security\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D81C64F-0027-47A6-9B46-A54C2999458E}|Edelstahl.Domain\\Edelstahl.Domain.csproj|solutionrelative:edelstahl.domain\\security\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D81C64F-0027-47A6-9B46-A54C2999458E}|Edelstahl.Domain\\Edelstahl.Domain.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.domain\\comercial\\detallepedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D81C64F-0027-47A6-9B46-A54C2999458E}|Edelstahl.Domain\\Edelstahl.Domain.csproj|solutionrelative:edelstahl.domain\\comercial\\detallepedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D81C64F-0027-47A6-9B46-A54C2999458E}|Edelstahl.Domain\\Edelstahl.Domain.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.domain\\security\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D81C64F-0027-47A6-9B46-A54C2999458E}|Edelstahl.Domain\\Edelstahl.Domain.csproj|solutionrelative:edelstahl.domain\\security\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D81C64F-0027-47A6-9B46-A54C2999458E}|Edelstahl.Domain\\Edelstahl.Domain.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.domain\\common\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D81C64F-0027-47A6-9B46-A54C2999458E}|Edelstahl.Domain\\Edelstahl.Domain.csproj|solutionrelative:edelstahl.domain\\common\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dana Eilin\\Downloads\\FrmPrincipalV2 (3).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6D81C64F-0027-47A6-9B46-A54C2999458E}|Edelstahl.Domain\\Edelstahl.Domain.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.domain\\comercial\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D81C64F-0027-47A6-9B46-A54C2999458E}|Edelstahl.Domain\\Edelstahl.Domain.csproj|solutionrelative:edelstahl.domain\\comercial\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.winapp\\forms\\commercial\\frmseleccioncliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|solutionrelative:edelstahl.winapp\\forms\\commercial\\frmseleccioncliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{42CBEEE8-002D-455B-804F-147097D48B34}|Edelstahl.BLL\\Edelstahl.BLL.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.bll\\services\\presupuestoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{42CBEEE8-002D-455B-804F-147097D48B34}|Edelstahl.BLL\\Edelstahl.BLL.csproj|solutionrelative:edelstahl.bll\\services\\presupuestoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.winapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|solutionrelative:edelstahl.winapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.winapp\\forms\\commercial\\frmconfirmarpedidov2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|solutionrelative:edelstahl.winapp\\forms\\commercial\\frmconfirmarpedidov2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.winapp\\forms\\commercial\\frmconfirmarpedidov2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|solutionrelative:edelstahl.winapp\\forms\\commercial\\frmconfirmarpedidov2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.winapp\\forms\\frmimportarclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|solutionrelative:edelstahl.winapp\\forms\\frmimportarclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.winapp\\forms\\frmimportarclientes.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|solutionrelative:edelstahl.winapp\\forms\\frmimportarclientes.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{42CBEEE8-002D-455B-804F-147097D48B34}|Edelstahl.BLL\\Edelstahl.BLL.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.bll\\services\\clienteimportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,32 +58,12 @@
       "RelativeMoniker": "D:0:0:{04DD06EF-1575-49A8-B4CB-256177F9ADF4}|Edelstahl.DAL\\Edelstahl.DAL.csproj|solutionrelative:edelstahl.dal\\implementations\\sqlserver\\clienteimportrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.winapp\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|solutionrelative:edelstahl.winapp\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.winapp\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|solutionrelative:edelstahl.winapp\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.winapp\\forms\\frmimportarclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|solutionrelative:edelstahl.winapp\\forms\\frmimportarclientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{04DD06EF-1575-49A8-B4CB-256177F9ADF4}|Edelstahl.DAL\\Edelstahl.DAL.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.dal\\implementations\\memory\\clienterepositorymemory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04DD06EF-1575-49A8-B4CB-256177F9ADF4}|Edelstahl.DAL\\Edelstahl.DAL.csproj|solutionrelative:edelstahl.dal\\implementations\\memory\\clienterepositorymemory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{04DD06EF-1575-49A8-B4CB-256177F9ADF4}|Edelstahl.DAL\\Edelstahl.DAL.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.dal\\tools\\sqlserverconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04DD06EF-1575-49A8-B4CB-256177F9ADF4}|Edelstahl.DAL\\Edelstahl.DAL.csproj|solutionrelative:edelstahl.dal\\tools\\sqlserverconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.winapp\\forms\\commercial\\frmconfirmarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|solutionrelative:edelstahl.winapp\\forms\\commercial\\frmconfirmarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D81C64F-0027-47A6-9B46-A54C2999458E}|Edelstahl.Domain\\Edelstahl.Domain.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.domain\\common\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D81C64F-0027-47A6-9B46-A54C2999458E}|Edelstahl.Domain\\Edelstahl.Domain.csproj|solutionrelative:edelstahl.domain\\common\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D81C64F-0027-47A6-9B46-A54C2999458E}|Edelstahl.Domain\\Edelstahl.Domain.csproj|C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\edelstahl.domain\\comercial\\tipoitempresupuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -130,19 +102,115 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FrmPrincipalV2.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\FrmPrincipalV2.Designer.cs",
-              "RelativeDocumentMoniker": "Edelstahl.WinApp\\FrmPrincipalV2.Designer.cs",
-              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\FrmPrincipalV2.Designer.cs",
-              "RelativeToolTip": "Edelstahl.WinApp\\FrmPrincipalV2.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\Program.cs",
+              "RelativeDocumentMoniker": "Edelstahl.WinApp\\Program.cs",
+              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\Program.cs",
+              "RelativeToolTip": "Edelstahl.WinApp\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAADwvykAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-13T00:20:09.479Z",
+              "WhenOpened": "2026-09-13T22:47:34.534Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "LanguageService.cs",
+              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Services\\Localization\\LanguageService.cs",
+              "RelativeDocumentMoniker": "Edelstahl.Services\\Localization\\LanguageService.cs",
+              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Services\\Localization\\LanguageService.cs",
+              "RelativeToolTip": "Edelstahl.Services\\Localization\\LanguageService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T22:38:44.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Services\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "Edelstahl.Services\\PasswordHasher.cs",
+              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Services\\PasswordHasher.cs",
+              "RelativeToolTip": "Edelstahl.Services\\PasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T20:56:18.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PruebaSecurity.cs",
+              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Domain\\Security\\PruebaSecurity.cs",
+              "RelativeDocumentMoniker": "Edelstahl.Domain\\Security\\PruebaSecurity.cs",
+              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Domain\\Security\\PruebaSecurity.cs",
+              "RelativeToolTip": "Edelstahl.Domain\\Security\\PruebaSecurity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T22:35:35.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DetallePedido.cs",
+              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Domain\\Comercial\\DetallePedido.cs",
+              "RelativeDocumentMoniker": "Edelstahl.Domain\\Comercial\\DetallePedido.cs",
+              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Domain\\Comercial\\DetallePedido.cs",
+              "RelativeToolTip": "Edelstahl.Domain\\Comercial\\DetallePedido.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T20:57:31.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Domain\\Security\\Usuario.cs",
+              "RelativeDocumentMoniker": "Edelstahl.Domain\\Security\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Domain\\Security\\Usuario.cs",
+              "RelativeToolTip": "Edelstahl.Domain\\Security\\Usuario.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T20:48:10.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Rol.cs",
+              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Domain\\Security\\Rol.cs",
+              "RelativeDocumentMoniker": "Edelstahl.Domain\\Security\\Rol.cs",
+              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Domain\\Security\\Rol.cs",
+              "RelativeToolTip": "Edelstahl.Domain\\Security\\Rol.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwBQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-13T20:48:01.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IPedidoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.DAL\\Interfaces\\IPedidoRepository.cs",
+              "RelativeDocumentMoniker": "Edelstahl.DAL\\Interfaces\\IPedidoRepository.cs",
+              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.DAL\\Interfaces\\IPedidoRepository.cs",
+              "RelativeToolTip": "Edelstahl.DAL\\Interfaces\\IPedidoRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwBQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-12T19:38:16.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Entity.cs",
+              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Domain\\Common\\Entity.cs",
+              "RelativeDocumentMoniker": "Edelstahl.Domain\\Common\\Entity.cs",
+              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Domain\\Common\\Entity.cs",
+              "RelativeToolTip": "Edelstahl.Domain\\Common\\Entity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-31T20:55:12.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "FrmPrincipalV2 (3).cs",
               "DocumentMoniker": "C:\\Users\\Dana Eilin\\Downloads\\FrmPrincipalV2 (3).cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\Downloads\\FrmPrincipalV2 (3).cs",
@@ -154,55 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmPrincipalV2.cs",
-              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\FrmPrincipalV2.cs",
-              "RelativeDocumentMoniker": "Edelstahl.WinApp\\FrmPrincipalV2.cs",
-              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\FrmPrincipalV2.cs",
-              "RelativeToolTip": "Edelstahl.WinApp\\FrmPrincipalV2.cs",
-              "ViewState": "AgIAAIQBAAAAAAAAAIAwwJEBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T01:34:30.243Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "idioma.ru-RU",
-              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\Languages\\idioma.ru-RU",
-              "RelativeDocumentMoniker": "Edelstahl.WinApp\\Languages\\idioma.ru-RU",
-              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\Languages\\idioma.ru-RU",
-              "RelativeToolTip": "Edelstahl.WinApp\\Languages\\idioma.ru-RU",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAgwFUAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-09-01T17:36:59.041Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "idioma.es-ES",
-              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\Languages\\idioma.es-ES",
-              "RelativeDocumentMoniker": "Edelstahl.WinApp\\Languages\\idioma.es-ES",
-              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\Languages\\idioma.es-ES",
-              "RelativeToolTip": "Edelstahl.WinApp\\Languages\\idioma.es-ES",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAgwFUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-09-01T17:35:35.449Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IPedidoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.DAL\\Interfaces\\IPedidoRepository.cs",
-              "RelativeDocumentMoniker": "Edelstahl.DAL\\Interfaces\\IPedidoRepository.cs",
-              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.DAL\\Interfaces\\IPedidoRepository.cs",
-              "RelativeToolTip": "Edelstahl.DAL\\Interfaces\\IPedidoRepository.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAzwCAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-12T19:38:16.596Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "Pedido.cs",
               "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Domain\\Comercial\\Pedido.cs",
               "RelativeDocumentMoniker": "Edelstahl.Domain\\Comercial\\Pedido.cs",
@@ -214,18 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FrmSeleccionCliente.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\Forms\\Commercial\\FrmSeleccionCliente.cs",
-              "RelativeDocumentMoniker": "Edelstahl.WinApp\\Forms\\Commercial\\FrmSeleccionCliente.cs",
-              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl-main\\Edelstahl\\Edelstahl.WinApp\\Forms\\Commercial\\FrmSeleccionCliente.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\SoftwareEdelstahl-main\\Edelstahl\\Edelstahl.WinApp\\Forms\\Commercial\\FrmSeleccionCliente.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T21:44:34.777Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "PresupuestoService.cs",
               "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.BLL\\Services\\PresupuestoService.cs",
               "RelativeDocumentMoniker": "Edelstahl.BLL\\Services\\PresupuestoService.cs",
@@ -237,66 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\Program.cs",
-              "RelativeDocumentMoniker": "Edelstahl.WinApp\\Program.cs",
-              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\Program.cs",
-              "RelativeToolTip": "Edelstahl.WinApp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T01:34:51.541Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FrmConfirmarPedidoV2.cs",
-              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedidoV2.cs",
-              "RelativeDocumentMoniker": "Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedidoV2.cs",
-              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedidoV2.cs",
-              "RelativeToolTip": "Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedidoV2.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAiwAYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T01:23:53.435Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FrmConfirmarPedidoV2.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedidoV2.cs",
-              "RelativeDocumentMoniker": "Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedidoV2.cs",
-              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl-main\\Edelstahl\\Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedidoV2.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\SoftwareEdelstahl-main\\Edelstahl\\Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedidoV2.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T01:23:15.854Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FrmImportarClientes.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\Forms\\FrmImportarClientes.Designer.cs",
-              "RelativeDocumentMoniker": "Edelstahl.WinApp\\Forms\\FrmImportarClientes.Designer.cs",
-              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\Forms\\FrmImportarClientes.Designer.cs",
-              "RelativeToolTip": "Edelstahl.WinApp\\Forms\\FrmImportarClientes.Designer.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAQwGYAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-02T22:15:22.856Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "FrmImportarClientes.cs",
-              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\Forms\\FrmImportarClientes.cs",
-              "RelativeDocumentMoniker": "Edelstahl.WinApp\\Forms\\FrmImportarClientes.cs",
-              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\Forms\\FrmImportarClientes.cs",
-              "RelativeToolTip": "Edelstahl.WinApp\\Forms\\FrmImportarClientes.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAQwEMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-02T22:04:13.743Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "ClienteImportService.cs",
               "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.BLL\\Services\\ClienteImportService.cs",
               "RelativeDocumentMoniker": "Edelstahl.BLL\\Services\\ClienteImportService.cs",
@@ -308,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "ClienteImportRepository.cs",
               "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.DAL\\Implementations\\SqlServer\\ClienteImportRepository.cs",
               "RelativeDocumentMoniker": "Edelstahl.DAL\\Implementations\\SqlServer\\ClienteImportRepository.cs",
@@ -320,41 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "FrmPrincipal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\FrmPrincipal.cs",
-              "RelativeDocumentMoniker": "Edelstahl.WinApp\\FrmPrincipal.cs",
-              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\Edelstahl\\Edelstahl\\Edelstahl.WinApp\\FrmPrincipal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\Edelstahl\\Edelstahl\\Edelstahl.WinApp\\FrmPrincipal.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-02T22:23:15.189Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "FrmPrincipal.cs",
-              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\FrmPrincipal.cs",
-              "RelativeDocumentMoniker": "Edelstahl.WinApp\\FrmPrincipal.cs",
-              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\FrmPrincipal.cs",
-              "RelativeToolTip": "Edelstahl.WinApp\\FrmPrincipal.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAADwv1IAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T17:44:04.743Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "FrmImportarClientes.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\Forms\\FrmImportarClientes.cs",
-              "RelativeDocumentMoniker": "Edelstahl.WinApp\\Forms\\FrmImportarClientes.cs",
-              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\Edelstahl\\Edelstahl\\Edelstahl.WinApp\\Forms\\FrmImportarClientes.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\Edelstahl\\Edelstahl\\Edelstahl.WinApp\\Forms\\FrmImportarClientes.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-02T21:11:14.323Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 14,
               "Title": "ClienteRepositoryMemory.cs",
               "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.DAL\\Implementations\\Memory\\ClienteRepositoryMemory.cs",
               "RelativeDocumentMoniker": "Edelstahl.DAL\\Implementations\\Memory\\ClienteRepositoryMemory.cs",
@@ -366,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 15,
               "Title": "SqlServerConnection.cs",
               "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.DAL\\Tools\\SqlServerConnection.cs",
               "RelativeDocumentMoniker": "Edelstahl.DAL\\Tools\\SqlServerConnection.cs",
@@ -378,30 +294,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Entity.cs",
-              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Domain\\Common\\Entity.cs",
-              "RelativeDocumentMoniker": "Edelstahl.Domain\\Common\\Entity.cs",
-              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Domain\\Common\\Entity.cs",
-              "RelativeToolTip": "Edelstahl.Domain\\Common\\Entity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-31T20:55:12.012Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "FrmConfirmarPedido.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedido.cs",
-              "RelativeDocumentMoniker": "Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedido.cs",
-              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl-main\\Edelstahl\\Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedido.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\SoftwareEdelstahl-main\\Edelstahl\\Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedido.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-31T14:48:45.109Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 17,
               "Title": "EstadoPresupuesto.cs",
               "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Domain\\Comercial\\EstadoPresupuesto.cs",
               "RelativeDocumentMoniker": "Edelstahl.Domain\\Comercial\\EstadoPresupuesto.cs",
@@ -413,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 16,
               "Title": "TipoItemPresupuesto.cs",
               "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Domain\\Comercial\\TipoItemPresupuesto.cs",
               "RelativeDocumentMoniker": "Edelstahl.Domain\\Comercial\\TipoItemPresupuesto.cs",
@@ -425,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 18,
               "Title": "DetallePresupuesto.cs",
               "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Domain\\Comercial\\DetallePresupuesto.cs",
               "RelativeDocumentMoniker": "Edelstahl.Domain\\Comercial\\DetallePresupuesto.cs",
@@ -437,7 +330,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 19,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Domain\\Comercial\\Cliente.cs",
               "RelativeDocumentMoniker": "Edelstahl.Domain\\Comercial\\Cliente.cs",
@@ -449,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 20,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.Test\\Program.cs",
               "RelativeDocumentMoniker": "Edelstahl.Test\\Program.cs",
@@ -461,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 21,
               "Title": "DetallePresupuestoDto.cs",
               "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\SoftwareEdelstahl-main\\SoftwareEdelstahl\\Edelstahl\\Edelstahl.BLL\\DTOs\\DetallePresupuestoDto.cs",
               "RelativeDocumentMoniker": "Edelstahl.BLL\\DTOs\\DetallePresupuestoDto.cs",

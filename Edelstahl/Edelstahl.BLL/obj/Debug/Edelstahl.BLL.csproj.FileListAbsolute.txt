@@ -93,6 +93,7 @@ C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl
 C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\Edelstahl.DAL.dll
 C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\Edelstahl.Domain.dll
 C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\Edelstahl.Services.dll
+C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\EntityFramework.dll
 C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\QuestPDF.dll
 C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\System.Memory.dll
@@ -103,6 +104,7 @@ C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl
 C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\Edelstahl.Domain.pdb
 C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\Edelstahl.Services.pdb
 C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\Edelstahl.Services.dll.config
+C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\EntityFramework.xml
 C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\QuestPDF.xml
 C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\System.Memory.xml

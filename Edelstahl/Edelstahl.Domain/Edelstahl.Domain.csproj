@@ -52,6 +52,9 @@
     <Compile Include="Comercial\TipoItemPresupuesto.cs" />
     <Compile Include="Common\Entity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\PruebaSecurity.cs" />
+    <Compile Include="Security\Rol.cs" />
+    <Compile Include="Security\Usuario.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Inventario\" />

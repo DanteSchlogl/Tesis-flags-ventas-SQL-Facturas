@@ -251,7 +251,7 @@ namespace Edelstahl.DAL.Implementations.SqlServer
                 columna + " = " + parametro;
 
             using (SqlConnection connection =
-                SqlServerConnection.CreateConnection())
+                SqlServerConnection.CreateServicesConnection())
             {
                 connection.Open();
 

@@ -83,7 +83,7 @@ namespace Edelstahl.DAL.Implementations.SqlServer
                 @"UPDATE dbo.Roles SET Activo = 0 WHERE Id = @Id";
 
             using (SqlConnection connection =
-                SqlServerConnection.CreateConnection())
+                SqlServerConnection.CreateServicesConnection())
             {
                 connection.Open();
 
