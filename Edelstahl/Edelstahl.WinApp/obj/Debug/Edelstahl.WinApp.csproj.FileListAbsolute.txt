@@ -63,6 +63,7 @@ C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl
 C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl\Edelstahl.WinApp\obj\Debug\Edelstahl.WinApp.csproj.AssemblyReference.cache
 C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl\Edelstahl.WinApp\obj\Debug\Edelstahl.WinApp.Forms.Commercial.FrmClientes.resources
 C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl\Edelstahl.WinApp\obj\Debug\Edelstahl.WinApp.Forms.Commercial.FrmConfirmarPedido.resources
+C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl\Edelstahl.WinApp\obj\Debug\Edelstahl.WinApp.Forms.Commercial.FrmConfirmarPedidoV2.resources
 C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl\Edelstahl.WinApp\obj\Debug\Edelstahl.WinApp.Forms.FrmImportarClientes.resources
 C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl\Edelstahl.WinApp\obj\Debug\Edelstahl.WinApp.FrmPrincipal.resources
 C:\Users\Dana Eilin\Documents\SoftwareEdelstahl-main\SoftwareEdelstahl\Edelstahl\Edelstahl.WinApp\obj\Debug\Edelstahl.WinApp.Properties.Resources.resources

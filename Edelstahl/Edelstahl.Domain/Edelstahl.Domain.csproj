@@ -53,6 +53,8 @@
     <Compile Include="Common\Entity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\PruebaSecurity.cs" />
+    <Compile Include="Security\RegistroBitacora.cs" />
+    <Compile Include="Security\ResultadoRespaldo.cs" />
     <Compile Include="Security\Rol.cs" />
     <Compile Include="Security\Usuario.cs" />
   </ItemGroup>

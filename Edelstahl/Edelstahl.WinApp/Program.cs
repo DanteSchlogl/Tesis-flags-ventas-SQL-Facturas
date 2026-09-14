@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Edelstahl.BLL.Services;
 using Edelstahl.DAL.EntityFramework;
+using Edelstahl.WinApp.Infrastructure;
 
 namespace Edelstahl.WinApp
 {
@@ -21,9 +19,11 @@ namespace Edelstahl.WinApp
             Application.SetCompatibleTextRenderingDefault(
                 false);
 
+            GlobalExceptionHandler.Registrar();
+
             try
             {
-                InicializadorNegocio.Inicializar(); 
+                InicializadorNegocio.Inicializar();
 
                 UsuarioService usuarioService =
                     new UsuarioService();
@@ -54,21 +54,16 @@ namespace Edelstahl.WinApp
 
                 Application.Run(
                     new FrmPrincipalV2());
-
-                SesionActual.Cerrar();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(
-                    "No fue posible iniciar Edelstahl ERP." +
-                    Environment.NewLine +
-                    Environment.NewLine +
-                    ex.Message,
-                    "Error de inicio",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
+                GlobalExceptionHandler.ProcesarErrorInicio(
+                    ex);
+            }
+            finally
+            {
+                SesionActual.Cerrar();
             }
         }
     }
 }
-
