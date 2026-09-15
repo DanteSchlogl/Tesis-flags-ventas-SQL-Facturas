@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Edelstahl.BLL.Services;
 using Edelstahl.Domain.Comercial;
+using Edelstahl.Services.Localization;
 
 namespace Edelstahl.WinApp.Forms.Commercial
 {
@@ -16,7 +13,18 @@ namespace Edelstahl.WinApp.Forms.Commercial
     {
         private readonly ClienteService _clienteService;
 
+        private Label lblTitulo;
+        private Label lblBuscar;
+
         private DataGridView dgvClientes;
+        private TextBox txtBuscar;
+
+        private Button btnBuscar;
+        private Button btnMostrarTodos;
+        private Button btnNuevoCliente;
+        private Button btnSeleccionar;
+
+        private List<Cliente> _clientesMostrados;
 
         public Cliente ClienteSeleccionado
         {
@@ -31,15 +39,26 @@ namespace Edelstahl.WinApp.Forms.Commercial
             _clienteService =
                 new ClienteService();
 
+            _clientesMostrados =
+                new List<Cliente>();
+
             ConfigurarFormulario();
+            ConfigurarEventosIdioma();
+            AplicarIdioma();
         }
 
         private void ConfigurarFormulario()
         {
-            Text = "Seleccionar Cliente";
+            Width =
+                1000;
 
-            Width = 1000;
-            Height = 600;
+            Height =
+                640;
+
+            MinimumSize =
+                new Size(
+                    900,
+                    600);
 
             StartPosition =
                 FormStartPosition.CenterParent;
@@ -48,16 +67,24 @@ namespace Edelstahl.WinApp.Forms.Commercial
                 Color.White;
 
             CrearControles();
-
             CargarClientes();
+
+            txtBuscar.Focus();
+        }
+
+        private void ConfigurarEventosIdioma()
+        {
+            LanguageService.IdiomaCambiado +=
+                LanguageService_IdiomaCambiado;
+
+            FormClosed +=
+                FrmSeleccionCliente_FormClosed;
         }
 
         private void CrearControles()
         {
-            Label lblTitulo = new Label();
-
-            lblTitulo.Text =
-                "Seleccionar Cliente";
+            lblTitulo =
+                new Label();
 
             lblTitulo.Font =
                 new Font(
@@ -66,50 +93,168 @@ namespace Edelstahl.WinApp.Forms.Commercial
                     FontStyle.Bold);
 
             lblTitulo.Location =
-                new Point(20, 20);
+                new Point(
+                    20,
+                    20);
 
-            lblTitulo.AutoSize = true;
+            lblTitulo.AutoSize =
+                true;
 
-            Controls.Add(lblTitulo);
+            Controls.Add(
+                lblTitulo);
 
-            TextBox txtBuscar =
+            lblBuscar =
+                new Label();
+
+            lblBuscar.Font =
+                new Font(
+                    "Segoe UI",
+                    9,
+                    FontStyle.Regular);
+
+            lblBuscar.Location =
+                new Point(
+                    20,
+                    62);
+
+            lblBuscar.AutoSize =
+                true;
+
+            Controls.Add(
+                lblBuscar);
+
+            txtBuscar =
                 new TextBox();
 
+            txtBuscar.Name =
+                "txtBuscar";
+
             txtBuscar.Location =
-                new Point(20, 70);
+                new Point(
+                    20,
+                    85);
 
-            txtBuscar.Width = 500;
+            txtBuscar.Size =
+                new Size(
+                    470,
+                    25);
 
-            Controls.Add(txtBuscar);
+            txtBuscar.Anchor =
+                AnchorStyles.Top |
+                AnchorStyles.Left |
+                AnchorStyles.Right;
 
-            Button btnBuscar =
+            txtBuscar.KeyDown +=
+                TxtBuscar_KeyDown;
+
+            Controls.Add(
+                txtBuscar);
+
+            btnBuscar =
                 new Button();
 
-            btnBuscar.Text =
-                "Buscar";
+            btnBuscar.Name =
+                "btnBuscar";
 
             btnBuscar.Location =
-                new Point(540, 68);
+                new Point(
+                    510,
+                    82);
 
             btnBuscar.Size =
-                new Size(120, 32);
+                new Size(
+                    115,
+                    32);
 
-            Controls.Add(btnBuscar);
+            btnBuscar.BackColor =
+                Color.FromArgb(
+                    49,
+                    102,
+                    230);
 
-            Button btnNuevoCliente =
+            btnBuscar.ForeColor =
+                Color.White;
+
+            btnBuscar.FlatStyle =
+                FlatStyle.Flat;
+
+            btnBuscar.FlatAppearance.BorderSize =
+                0;
+
+            btnBuscar.Click +=
+                BtnBuscar_Click;
+
+            Controls.Add(
+                btnBuscar);
+
+            btnMostrarTodos =
                 new Button();
 
-            btnNuevoCliente.Text =
-                "Nuevo Cliente";
+            btnMostrarTodos.Name =
+                "btnMostrarTodos";
+
+            btnMostrarTodos.Location =
+                new Point(
+                    640,
+                    82);
+
+            btnMostrarTodos.Size =
+                new Size(
+                    125,
+                    32);
+
+            btnMostrarTodos.BackColor =
+                Color.FromArgb(
+                    225,
+                    231,
+                    240);
+
+            btnMostrarTodos.ForeColor =
+                Color.FromArgb(
+                    32,
+                    49,
+                    79);
+
+            btnMostrarTodos.FlatStyle =
+                FlatStyle.Flat;
+
+            btnMostrarTodos.FlatAppearance.BorderColor =
+                Color.FromArgb(
+                    150,
+                    165,
+                    190);
+
+            btnMostrarTodos.Click +=
+                BtnMostrarTodos_Click;
+
+            Controls.Add(
+                btnMostrarTodos);
+
+            btnNuevoCliente =
+                new Button();
+
+            btnNuevoCliente.Name =
+                "btnNuevoCliente";
 
             btnNuevoCliente.Location =
-                new Point(780, 68);
+                new Point(
+                    790,
+                    82);
 
             btnNuevoCliente.Size =
-                new Size(150, 32);
+                new Size(
+                    150,
+                    32);
+
+            btnNuevoCliente.Anchor =
+                AnchorStyles.Top |
+                AnchorStyles.Right;
 
             btnNuevoCliente.BackColor =
-                Color.FromArgb(49, 102, 230);
+                Color.FromArgb(
+                    49,
+                    102,
+                    230);
 
             btnNuevoCliente.ForeColor =
                 Color.White;
@@ -117,25 +262,51 @@ namespace Edelstahl.WinApp.Forms.Commercial
             btnNuevoCliente.FlatStyle =
                 FlatStyle.Flat;
 
+            btnNuevoCliente.FlatAppearance.BorderSize =
+                0;
+
             btnNuevoCliente.Click +=
                 BtnNuevoCliente_Click;
 
-            Controls.Add(btnNuevoCliente);
+            Controls.Add(
+                btnNuevoCliente);
 
             dgvClientes =
                 new DataGridView();
 
+            dgvClientes.Name =
+                "dgvClientes";
+
             dgvClientes.Location =
-                new Point(20, 120);
+                new Point(
+                    20,
+                    135);
 
             dgvClientes.Size =
-                new Size(920, 360);
+                new Size(
+                    920,
+                    370);
+
+            dgvClientes.Anchor =
+                AnchorStyles.Top |
+                AnchorStyles.Bottom |
+                AnchorStyles.Left |
+                AnchorStyles.Right;
 
             dgvClientes.RowHeadersVisible =
                 false;
 
             dgvClientes.AllowUserToAddRows =
                 false;
+
+            dgvClientes.AllowUserToDeleteRows =
+                false;
+
+            dgvClientes.AllowUserToResizeRows =
+                false;
+
+            dgvClientes.ReadOnly =
+                true;
 
             dgvClientes.SelectionMode =
                 DataGridViewSelectionMode.FullRowSelect;
@@ -146,36 +317,49 @@ namespace Edelstahl.WinApp.Forms.Commercial
             dgvClientes.BackgroundColor =
                 Color.White;
 
-            dgvClientes.ColumnCount = 4;
+            dgvClientes.AutoSizeColumnsMode =
+                DataGridViewAutoSizeColumnsMode.Fill;
+
+            dgvClientes.ColumnCount =
+                6;
 
             dgvClientes.Columns[0].Name =
-                "Nombre";
+                "Id";
 
-            dgvClientes.Columns[1].Name =
-                "Email";
+            dgvClientes.Columns[0].Visible =
+                false;
 
-            dgvClientes.Columns[2].Name =
-                "Ciudad";
+            dgvClientes.CellDoubleClick +=
+                DgvClientes_CellDoubleClick;
 
-            dgvClientes.Columns[3].Name =
-                "Teléfono";
+            Controls.Add(
+                dgvClientes);
 
-            Controls.Add(dgvClientes);
-
-            Button btnSeleccionar =
+            btnSeleccionar =
                 new Button();
 
-            btnSeleccionar.Text =
-                "Seleccionar Cliente";
+            btnSeleccionar.Name =
+                "btnSeleccionar";
 
             btnSeleccionar.Size =
-                new Size(220, 45);
+                new Size(
+                    220,
+                    45);
 
             btnSeleccionar.Location =
-                new Point(720, 500);
+                new Point(
+                    720,
+                    525);
+
+            btnSeleccionar.Anchor =
+                AnchorStyles.Bottom |
+                AnchorStyles.Right;
 
             btnSeleccionar.BackColor =
-                Color.FromArgb(49, 102, 230);
+                Color.FromArgb(
+                    49,
+                    102,
+                    230);
 
             btnSeleccionar.ForeColor =
                 Color.White;
@@ -183,53 +367,353 @@ namespace Edelstahl.WinApp.Forms.Commercial
             btnSeleccionar.FlatStyle =
                 FlatStyle.Flat;
 
+            btnSeleccionar.FlatAppearance.BorderSize =
+                0;
+
             btnSeleccionar.Click +=
                 BtnSeleccionar_Click;
 
-            Controls.Add(btnSeleccionar);
+            Controls.Add(
+                btnSeleccionar);
+
+            AcceptButton =
+                btnBuscar;
+        }
+
+        private void AplicarIdioma()
+        {
+            Text =
+                LanguageService.Translate(
+                    "SeleccionarCliente");
+
+            lblTitulo.Text =
+                LanguageService.Translate(
+                    "SeleccionarCliente");
+
+            lblBuscar.Text =
+                LanguageService.Translate(
+                    "BuscarClientes") +
+                ":";
+
+            btnBuscar.Text =
+                LanguageService.Translate(
+                    "Buscar");
+
+            btnMostrarTodos.Text =
+                LanguageService.Translate(
+                    "MostrarTodos");
+
+            btnNuevoCliente.Text =
+                LanguageService.Translate(
+                    "NuevoCliente");
+
+            btnSeleccionar.Text =
+                LanguageService.Translate(
+                    "SeleccionarCliente");
+
+            dgvClientes.Columns[1].HeaderText =
+                LanguageService.Translate(
+                    "CUIT");
+
+            dgvClientes.Columns[2].HeaderText =
+                LanguageService.Translate(
+                    "RazonSocial");
+
+            dgvClientes.Columns[3].HeaderText =
+                LanguageService.Translate(
+                    "Correo");
+
+            dgvClientes.Columns[4].HeaderText =
+                LanguageService.Translate(
+                    "Localidad");
+
+            dgvClientes.Columns[5].HeaderText =
+                LanguageService.Translate(
+                    "Telefono");
+        }
+
+        private void LanguageService_IdiomaCambiado(
+            object sender,
+            EventArgs e)
+        {
+            AplicarIdioma();
+        }
+
+        private void FrmSeleccionCliente_FormClosed(
+            object sender,
+            FormClosedEventArgs e)
+        {
+            LanguageService.IdiomaCambiado -=
+                LanguageService_IdiomaCambiado;
         }
 
         private void CargarClientes()
         {
-            dgvClientes.Rows.Clear();
-
             List<Cliente> clientes =
                 _clienteService.ObtenerTodos();
 
-            foreach (Cliente cliente in clientes)
+            MostrarClientes(
+                clientes);
+        }
+
+        private void MostrarClientes(
+            List<Cliente> clientes)
+        {
+            _clientesMostrados =
+                clientes ??
+                new List<Cliente>();
+
+            dgvClientes.Rows.Clear();
+
+            foreach (Cliente cliente
+                in _clientesMostrados)
             {
                 dgvClientes.Rows.Add(
+                    cliente.Id,
+                    cliente.CUIT,
                     cliente.RazonSocial,
                     cliente.Email,
                     cliente.Localidad,
                     cliente.Telefono);
             }
+
+            dgvClientes.ClearSelection();
+
+            dgvClientes.CurrentCell =
+                null;
+        }
+
+        private void BtnBuscar_Click(
+            object sender,
+            EventArgs e)
+        {
+            BuscarClientes();
+        }
+
+        private void TxtBuscar_KeyDown(
+            object sender,
+            KeyEventArgs e)
+        {
+            if (e.KeyCode != Keys.Enter)
+            {
+                return;
+            }
+
+            e.SuppressKeyPress =
+                true;
+
+            e.Handled =
+                true;
+
+            BuscarClientes();
+        }
+
+        private void BuscarClientes()
+        {
+            string filtro =
+                txtBuscar.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(
+                filtro))
+            {
+                CargarClientes();
+
+                txtBuscar.Focus();
+
+                return;
+            }
+
+            try
+            {
+                string filtroCUIT =
+                    NormalizarCUIT(
+                        filtro);
+
+                string filtroTexto =
+                    NormalizarTexto(
+                        filtro);
+
+                List<Cliente> clientes =
+                    _clienteService.ObtenerTodos();
+
+                List<Cliente> resultados =
+                    clientes
+                        .Where(cliente =>
+                        {
+                            string cuitCliente =
+                                NormalizarCUIT(
+                                    cliente.CUIT);
+
+                            string razonSocial =
+                                NormalizarTexto(
+                                    cliente.RazonSocial);
+
+                            string email =
+                                NormalizarTexto(
+                                    cliente.Email);
+
+                            string localidad =
+                                NormalizarTexto(
+                                    cliente.Localidad);
+
+                            string telefono =
+                                NormalizarTexto(
+                                    cliente.Telefono);
+
+                            bool coincideCUIT =
+                                !string.IsNullOrWhiteSpace(
+                                    filtroCUIT) &&
+                                cuitCliente.Contains(
+                                    filtroCUIT);
+
+                            bool coincideRazonSocial =
+                                razonSocial.Contains(
+                                    filtroTexto);
+
+                            bool coincideEmail =
+                                email.Contains(
+                                    filtroTexto);
+
+                            bool coincideLocalidad =
+                                localidad.Contains(
+                                    filtroTexto);
+
+                            bool coincideTelefono =
+                                telefono.Contains(
+                                    filtroTexto);
+
+                            return
+                                coincideCUIT ||
+                                coincideRazonSocial ||
+                                coincideEmail ||
+                                coincideLocalidad ||
+                                coincideTelefono;
+                        })
+                        .OrderBy(
+                            cliente =>
+                                cliente.RazonSocial)
+                        .ToList();
+
+                MostrarClientes(
+                    resultados);
+
+                if (resultados.Count == 0)
+                {
+                    MessageBox.Show(
+                        LanguageService.Translate(
+                            "BusquedaSinResultados"),
+                        LanguageService.Translate(
+                            "BuscarClientes"),
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+
+                    txtBuscar.Focus();
+
+                    txtBuscar.SelectAll();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    LanguageService.Translate(
+                        "ErrorBaseDatos") +
+                    Environment.NewLine +
+                    Environment.NewLine +
+                    ex.Message,
+                    LanguageService.Translate(
+                        "BuscarClientes"),
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
+
+        private void BtnMostrarTodos_Click(
+            object sender,
+            EventArgs e)
+        {
+            txtBuscar.Clear();
+
+            CargarClientes();
+
+            txtBuscar.Focus();
         }
 
         private void BtnSeleccionar_Click(
             object sender,
             EventArgs e)
         {
+            SeleccionarClienteActual();
+        }
+
+        private void DgvClientes_CellDoubleClick(
+            object sender,
+            DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+            {
+                return;
+            }
+
+            SeleccionarClienteActual();
+        }
+
+        private void SeleccionarClienteActual()
+        {
             if (dgvClientes.SelectedRows.Count == 0)
             {
                 MessageBox.Show(
-                    "Debe seleccionar un cliente.");
+                    LanguageService.Translate(
+                        "ClienteRequerido"),
+                    LanguageService.Translate(
+                        "SeleccionarCliente"),
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
 
                 return;
             }
 
-            string razonSocial =
-                dgvClientes.SelectedRows[0]
+            object valorId =
+                dgvClientes
+                    .SelectedRows[0]
                     .Cells[0]
-                    .Value
-                    .ToString();
+                    .Value;
+
+            Guid clienteId;
+
+            if (valorId == null ||
+                !Guid.TryParse(
+                    valorId.ToString(),
+                    out clienteId))
+            {
+                MessageBox.Show(
+                    LanguageService.Translate(
+                        "ClienteNoEncontrado"),
+                    LanguageService.Translate(
+                        "SeleccionarCliente"),
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                return;
+            }
 
             ClienteSeleccionado =
-                _clienteService
-                    .ObtenerTodos()
+                _clientesMostrados
                     .FirstOrDefault(
-                        x => x.RazonSocial ==
-                             razonSocial);
+                        cliente =>
+                            cliente.Id == clienteId);
+
+            if (ClienteSeleccionado == null)
+            {
+                MessageBox.Show(
+                    LanguageService.Translate(
+                        "ClienteNoEncontrado"),
+                    LanguageService.Translate(
+                        "SeleccionarCliente"),
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                return;
+            }
 
             DialogResult =
                 DialogResult.OK;
@@ -241,12 +725,48 @@ namespace Edelstahl.WinApp.Forms.Commercial
             object sender,
             EventArgs e)
         {
-            FrmClientes frm =
-                new FrmClientes();
+            using (FrmClientes formulario =
+                new FrmClientes())
+            {
+                formulario.ShowDialog(
+                    this);
+            }
 
-            frm.ShowDialog();
+            txtBuscar.Clear();
 
             CargarClientes();
+
+            txtBuscar.Focus();
+        }
+
+        private static string NormalizarCUIT(
+            string cuit)
+        {
+            return string.IsNullOrWhiteSpace(
+                cuit)
+                ? string.Empty
+                : cuit
+                    .Trim()
+                    .Replace(
+                        "-",
+                        string.Empty)
+                    .Replace(
+                        " ",
+                        string.Empty)
+                    .Replace(
+                        ".",
+                        string.Empty);
+        }
+
+        private static string NormalizarTexto(
+            string valor)
+        {
+            return string.IsNullOrWhiteSpace(
+                valor)
+                ? string.Empty
+                : valor
+                    .Trim()
+                    .ToLowerInvariant();
         }
     }
 }

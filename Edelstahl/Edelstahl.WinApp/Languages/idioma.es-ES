@@ -85,3 +85,87 @@ Observaciones:Observaciones
 Si:Sí
 No:No
 RespaldoDatos:Copia de seguridad
+IniciarSesion:Iniciar sesión
+NombreUsuario:Nombre de usuario
+Contrasena:Contraseña
+CerrarSesion:Cerrar sesión
+UsuarioActual:Usuario actual
+Bienvenido:Bienvenido
+CredencialesInvalidas:El usuario o la contraseña son incorrectos
+SeleccionarModoInicio:Seleccione el modo de inicio
+IniciarConSqlServer:Iniciar con SQL Server
+IniciarModoDemostracion:Iniciar modo de demostración
+SalirAplicacion:Salir de la aplicación
+BaseDatosDisponible:Base de datos disponible
+BaseDatosNoDisponible:Base de datos no disponible
+ModoDemostracion:Modo de demostración
+BuscarClientes:Buscar clientes
+MostrarTodos:Mostrar todos
+ClienteRequerido:Debe seleccionar un cliente
+ClienteNoEncontrado:No se ha encontrado el cliente
+BusquedaSinResultados:No se han encontrado resultados
+ClienteDuplicado:Ya existe un cliente con la identificación fiscal indicada
+ClienteRegistradoCorrectamente:Cliente registrado correctamente
+ActualizarListado:Actualizar listado
+SeleccionCliente:Selección del cliente
+SeleccionPresupuesto:Selección del presupuesto
+RevisionProductos:Revisión de productos
+ValidacionCredito:Validación del crédito
+RegistroSena:Registro del anticipo
+ResumenConfirmacion:Resumen de confirmación
+ResultadoOperacion:Resultado de la operación
+CreditoSuficiente:Crédito suficiente
+CreditoInsuficiente:Crédito insuficiente
+PresupuestoConfirmable:Presupuesto disponible para confirmar
+PresupuestoNoConfirmable:El presupuesto no se puede confirmar
+ConfirmarGeneracionPedido:¿Confirma la generación del pedido?
+ImportarClientes:Importar clientes
+SeleccionarArchivo:Seleccionar archivo
+ArchivoSeleccionado:Archivo seleccionado
+ArchivoNoSeleccionado:Ningún archivo seleccionado
+RegistrosDetectados:Registros detectados
+RegistrosImportados:Registros importados
+RegistrosOmitidos:Registros omitidos
+ImportacionFinalizada:Importación finalizada
+ImportacionConErrores:La importación ha finalizado con errores
+DatosProtegidos:Datos protegidos
+CifradoSimetrico:Cifrado simétrico
+CUITCifrado:Identificación fiscal cifrada
+ErrorDescifrado:No ha sido posible descifrar el dato
+IntegridadInvalida:La integridad del dato no es válida
+CrearRespaldo:Crear copia de seguridad
+RestaurarRespaldo:Restaurar copia de seguridad
+SeleccionarDestino:Seleccionar destino
+RespaldoExitoso:La copia de seguridad se ha creado correctamente
+RestauracionExitosa:La restauración se ha realizado correctamente
+ErrorBaseDatos:Error de base de datos
+ConexionExitosa:Conexión realizada correctamente
+DescripcionRegistrarSena:Introduzca el anticipo exacto requerido para confirmar el pedido
+SenaPendiente:Anticipo pendiente
+TransferenciaBancaria:Transferencia bancaria
+DepositoBancario:Ingreso bancario
+Cheque:Cheque
+Efectivo:Efectivo
+Tarjeta:Tarjeta
+SenaNoRequerida:Anticipo no requerido
+PresupuestoSinAnticipo:El presupuesto seleccionado no requiere anticipo
+ImporteInsuficiente:Importe insuficiente
+MensajeImporteInsuficiente:El importe recibido no es suficiente. El anticipo requerido es
+ImporteSuperior:Importe superior al requerido
+MensajeImporteSuperior:El importe recibido no puede superar el anticipo requerido de
+MedioPagoRequerido:Forma de pago requerida
+DebeSeleccionarMedioPago:Debe seleccionar una forma de pago
+ComprobanteRequerido:Comprobante requerido
+ErrorGenerarComprobante:No se ha podido generar el número del comprobante
+FechaIncorrecta:Fecha incorrecta
+FechaPagoFutura:La fecha del pago no puede ser posterior a la fecha actual
+SenaRegistradaCorrectamente:Anticipo registrado correctamente
+MensajeSenaRegistrada:El anticipo se ha registrado correctamente
+Importe:Importe
+Comprobante:Comprobante
+SubtituloLogin:Introduzca sus credenciales para continuar
+MostrarContrasena:Mostrar contraseña
+AccesoDenegado:Acceso denegado
+DescripcionModoInicio:Seleccione cómo desea ejecutar Edelstahl ERP
+DescripcionModoSql:Utiliza las bases de datos, el inicio de sesión, la bitácora, la persistencia y el cifrado de la identificación fiscal
+DescripcionModoDemo:Permite recorrer la interfaz utilizando información temporal sin conectarse a SQL Server

@@ -85,3 +85,87 @@ Observaciones:Примечания
 Si:Да
 No:Нет
 RespaldoDatos:Резервное копирование
+IniciarSesion:Войти
+NombreUsuario:Имя пользователя
+Contrasena:Пароль
+CerrarSesion:Выйти
+UsuarioActual:Текущий пользователь
+Bienvenido:Добро пожаловать
+CredencialesInvalidas:Неверное имя пользователя или пароль
+SeleccionarModoInicio:Выберите режим запуска
+IniciarConSqlServer:Запустить с SQL Server
+IniciarModoDemostracion:Запустить демонстрационный режим
+SalirAplicacion:Выйти из приложения
+BaseDatosDisponible:База данных доступна
+BaseDatosNoDisponible:База данных недоступна
+ModoDemostracion:Демонстрационный режим
+BuscarClientes:Поиск клиентов
+MostrarTodos:Показать всех
+ClienteRequerido:Необходимо выбрать клиента
+ClienteNoEncontrado:Клиент не найден
+BusquedaSinResultados:Результаты не найдены
+ClienteDuplicado:Клиент с указанным налоговым номером уже существует
+ClienteRegistradoCorrectamente:Клиент успешно зарегистрирован
+ActualizarListado:Обновить список
+SeleccionCliente:Выбор клиента
+SeleccionPresupuesto:Выбор предложения
+RevisionProductos:Проверка товаров
+ValidacionCredito:Проверка кредита
+RegistroSena:Регистрация предоплаты
+ResumenConfirmacion:Сводка подтверждения
+ResultadoOperacion:Результат операции
+CreditoSuficiente:Достаточный кредит
+CreditoInsuficiente:Недостаточный кредит
+PresupuestoConfirmable:Предложение доступно для подтверждения
+PresupuestoNoConfirmable:Предложение не может быть подтверждено
+ConfirmarGeneracionPedido:Подтвердить создание заказа?
+ImportarClientes:Импортировать клиентов
+SeleccionarArchivo:Выбрать файл
+ArchivoSeleccionado:Файл выбран
+ArchivoNoSeleccionado:Файл не выбран
+RegistrosDetectados:Обнаружено записей
+RegistrosImportados:Импортировано записей
+RegistrosOmitidos:Пропущено записей
+ImportacionFinalizada:Импорт завершён
+ImportacionConErrores:Импорт завершён с ошибками
+DatosProtegidos:Защищённые данные
+CifradoSimetrico:Симметричное шифрование
+CUITCifrado:Зашифрованный налоговый номер
+ErrorDescifrado:Не удалось расшифровать данные
+IntegridadInvalida:Целостность данных нарушена
+CrearRespaldo:Создать резервную копию
+RestaurarRespaldo:Восстановить резервную копию
+SeleccionarDestino:Выбрать место сохранения
+RespaldoExitoso:Резервное копирование успешно завершено
+RestauracionExitosa:Восстановление успешно завершено
+ErrorBaseDatos:Ошибка базы данных
+ConexionExitosa:Соединение успешно установлено
+DescripcionRegistrarSena:Введите точную сумму предоплаты, необходимую для подтверждения заказа
+SenaPendiente:Предоплата ожидается
+TransferenciaBancaria:Банковский перевод
+DepositoBancario:Банковский взнос
+Cheque:Чек
+Efectivo:Наличные
+Tarjeta:Карта
+SenaNoRequerida:Предоплата не требуется
+PresupuestoSinAnticipo:Для выбранного предложения предоплата не требуется
+ImporteInsuficiente:Недостаточная сумма
+MensajeImporteInsuficiente:Полученной суммы недостаточно. Необходимая предоплата составляет
+ImporteSuperior:Сумма превышает необходимую предоплату
+MensajeImporteSuperior:Полученная сумма не может превышать необходимую предоплату
+MedioPagoRequerido:Необходимо выбрать способ оплаты
+DebeSeleccionarMedioPago:Выберите способ оплаты
+ComprobanteRequerido:Необходим платёжный документ
+ErrorGenerarComprobante:Не удалось создать номер платёжного документа
+FechaIncorrecta:Неверная дата
+FechaPagoFutura:Дата платежа не может быть в будущем
+SenaRegistradaCorrectamente:Предоплата успешно зарегистрирована
+MensajeSenaRegistrada:Предоплата была успешно зарегистрирована
+Importe:Сумма
+Comprobante:Документ
+SubtituloLogin:Введите учётные данные, чтобы продолжить
+MostrarContrasena:Показать пароль
+AccesoDenegado:Доступ запрещён
+DescripcionModoInicio:Выберите способ запуска Edelstahl ERP
+DescripcionModoSql:Использует базы данных, вход, журнал аудита, сохранение данных и шифрование налогового номера
+DescripcionModoDemo:Позволяет просматривать интерфейс с временными данными без подключения к SQL Server

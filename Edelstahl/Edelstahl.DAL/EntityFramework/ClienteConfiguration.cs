@@ -1,10 +1,14 @@
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity.Infrastructure.Annotations;
 using System.Data.Entity.ModelConfiguration;
 using Edelstahl.Domain.Comercial;
-using System.Data.Entity.Infrastructure.Annotations;
 
 namespace Edelstahl.DAL.EntityFramework
 {
+    /// <summary>
+    /// Configuración de Entity Framework para la
+    /// entidad Cliente.
+    /// </summary>
     public class ClienteConfiguration
         : EntityTypeConfiguration<Cliente>
     {
@@ -15,15 +19,22 @@ namespace Edelstahl.DAL.EntityFramework
             HasKey(cliente => cliente.Id);
 
             Property(cliente => cliente.Id)
-                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.None);
+                .HasDatabaseGeneratedOption(
+                    DatabaseGeneratedOption.None);
 
+            /*
+             * El CUIT se almacena cifrado mediante AES.
+             * La longitud se amplía para admitir el
+             * contenido cifrado codificado en Base64.
+             */
             Property(cliente => cliente.CUIT)
                 .IsRequired()
-                .HasMaxLength(20)
+                .HasMaxLength(300)
                 .HasColumnAnnotation(
                     IndexAnnotation.AnnotationName,
                     new IndexAnnotation(
-                        new IndexAttribute("UQ_Clientes_CUIT")
+                        new IndexAttribute(
+                            "UQ_Clientes_CUIT")
                         {
                             IsUnique = true
                         }));
@@ -32,11 +43,13 @@ namespace Edelstahl.DAL.EntityFramework
                 .IsRequired()
                 .HasMaxLength(250);
 
-            Property(cliente => cliente.DireccionFacturacion)
+            Property(cliente =>
+                    cliente.DireccionFacturacion)
                 .IsRequired()
                 .HasMaxLength(500);
 
-            Property(cliente => cliente.DireccionEntrega)
+            Property(cliente =>
+                    cliente.DireccionEntrega)
                 .IsRequired()
                 .HasMaxLength(500);
 

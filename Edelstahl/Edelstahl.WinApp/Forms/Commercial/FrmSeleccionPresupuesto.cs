@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Edelstahl.BLL.Services;
 using Edelstahl.Domain.Comercial;
+using Edelstahl.Services.Localization;
 
 namespace Edelstahl.WinApp.Forms.Commercial
 {
@@ -16,9 +13,18 @@ namespace Edelstahl.WinApp.Forms.Commercial
     {
         private readonly PresupuestoService _presupuestoService;
 
-        private DataGridView dgvPresupuestos;
-        private TextBox txtBuscar;
+        private Label lblTitulo;
+        private Label lblSubtitulo;
         private Label lblResultado;
+
+        private TextBox txtBuscar;
+
+        private DataGridView dgvPresupuestos;
+
+        private Button btnBuscar;
+        private Button btnActualizar;
+        private Button btnCancelar;
+        private Button btnSeleccionar;
 
         private List<Presupuesto> presupuestosCargados;
 
@@ -45,13 +51,12 @@ namespace Edelstahl.WinApp.Forms.Commercial
                 new List<Presupuesto>();
 
             ConfigurarFormulario();
+            ConfigurarEventosIdioma();
+            AplicarIdioma();
         }
 
         private void ConfigurarFormulario()
         {
-            Text =
-                "Seleccionar Presupuesto";
-
             Width =
                 1100;
 
@@ -62,7 +67,10 @@ namespace Edelstahl.WinApp.Forms.Commercial
                 FormStartPosition.CenterParent;
 
             BackColor =
-                Color.FromArgb(231, 236, 242);
+                Color.FromArgb(
+                    231,
+                    236,
+                    242);
 
             FormBorderStyle =
                 FormBorderStyle.FixedDialog;
@@ -74,17 +82,25 @@ namespace Edelstahl.WinApp.Forms.Commercial
                 false;
 
             CrearControles();
+
+            txtBuscar.Focus();
+        }
+
+        private void ConfigurarEventosIdioma()
+        {
+            LanguageService.IdiomaCambiado +=
+                LanguageService_IdiomaCambiado;
+
+            FormClosed +=
+                FrmSeleccionPresupuesto_FormClosed;
         }
 
         private void CrearControles()
         {
             Controls.Clear();
 
-            Label lblTitulo =
+            lblTitulo =
                 new Label();
-
-            lblTitulo.Text =
-                "Seleccionar Presupuesto";
 
             lblTitulo.Font =
                 new Font(
@@ -93,22 +109,24 @@ namespace Edelstahl.WinApp.Forms.Commercial
                     FontStyle.Bold);
 
             lblTitulo.ForeColor =
-                Color.FromArgb(54, 69, 98);
+                Color.FromArgb(
+                    54,
+                    69,
+                    98);
 
             lblTitulo.AutoSize =
                 true;
 
             lblTitulo.Location =
-                new Point(25, 20);
+                new Point(
+                    25,
+                    20);
 
             Controls.Add(
                 lblTitulo);
 
-            Label lblSubtitulo =
+            lblSubtitulo =
                 new Label();
-
-            lblSubtitulo.Text =
-                "Presupuestos disponibles para el cliente seleccionado";
 
             lblSubtitulo.Font =
                 new Font(
@@ -117,13 +135,18 @@ namespace Edelstahl.WinApp.Forms.Commercial
                     FontStyle.Bold);
 
             lblSubtitulo.ForeColor =
-                Color.FromArgb(70, 70, 70);
+                Color.FromArgb(
+                    70,
+                    70,
+                    70);
 
             lblSubtitulo.AutoSize =
                 true;
 
             lblSubtitulo.Location =
-                new Point(25, 75);
+                new Point(
+                    25,
+                    75);
 
             Controls.Add(
                 lblSubtitulo);
@@ -131,11 +154,18 @@ namespace Edelstahl.WinApp.Forms.Commercial
             txtBuscar =
                 new TextBox();
 
+            txtBuscar.Name =
+                "txtBuscar";
+
             txtBuscar.Location =
-                new Point(25, 115);
+                new Point(
+                    25,
+                    115);
 
             txtBuscar.Size =
-                new Size(500, 30);
+                new Size(
+                    500,
+                    30);
 
             txtBuscar.Font =
                 new Font(
@@ -148,23 +178,33 @@ namespace Edelstahl.WinApp.Forms.Commercial
             Controls.Add(
                 txtBuscar);
 
-            Button btnBuscar =
+            btnBuscar =
                 new Button();
 
-            btnBuscar.Text =
-                "Buscar";
+            btnBuscar.Name =
+                "btnBuscar";
 
             btnBuscar.Location =
-                new Point(545, 112);
+                new Point(
+                    545,
+                    112);
 
             btnBuscar.Size =
-                new Size(130, 35);
+                new Size(
+                    130,
+                    35);
 
             btnBuscar.BackColor =
-                Color.FromArgb(173, 196, 255);
+                Color.FromArgb(
+                    173,
+                    196,
+                    255);
 
             btnBuscar.ForeColor =
-                Color.FromArgb(40, 40, 40);
+                Color.FromArgb(
+                    40,
+                    40,
+                    40);
 
             btnBuscar.FlatStyle =
                 FlatStyle.Flat;
@@ -181,23 +221,33 @@ namespace Edelstahl.WinApp.Forms.Commercial
             Controls.Add(
                 btnBuscar);
 
-            Button btnActualizar =
+            btnActualizar =
                 new Button();
 
-            btnActualizar.Text =
-                "Actualizar";
+            btnActualizar.Name =
+                "btnActualizar";
 
             btnActualizar.Location =
-                new Point(690, 112);
+                new Point(
+                    690,
+                    112);
 
             btnActualizar.Size =
-                new Size(130, 35);
+                new Size(
+                    130,
+                    35);
 
             btnActualizar.BackColor =
-                Color.FromArgb(211, 207, 239);
+                Color.FromArgb(
+                    211,
+                    207,
+                    239);
 
             btnActualizar.ForeColor =
-                Color.FromArgb(40, 40, 40);
+                Color.FromArgb(
+                    40,
+                    40,
+                    40);
 
             btnActualizar.FlatStyle =
                 FlatStyle.Flat;
@@ -217,11 +267,18 @@ namespace Edelstahl.WinApp.Forms.Commercial
             dgvPresupuestos =
                 new DataGridView();
 
+            dgvPresupuestos.Name =
+                "dgvPresupuestos";
+
             dgvPresupuestos.Location =
-                new Point(25, 175);
+                new Point(
+                    25,
+                    175);
 
             dgvPresupuestos.Size =
-                new Size(1025, 330);
+                new Size(
+                    1025,
+                    330);
 
             dgvPresupuestos.RowHeadersVisible =
                 false;
@@ -230,6 +287,9 @@ namespace Edelstahl.WinApp.Forms.Commercial
                 false;
 
             dgvPresupuestos.AllowUserToDeleteRows =
+                false;
+
+            dgvPresupuestos.AllowUserToResizeRows =
                 false;
 
             dgvPresupuestos.ReadOnly =
@@ -245,7 +305,10 @@ namespace Edelstahl.WinApp.Forms.Commercial
                 DataGridViewAutoSizeColumnsMode.Fill;
 
             dgvPresupuestos.BackgroundColor =
-                Color.FromArgb(246, 248, 252);
+                Color.FromArgb(
+                    246,
+                    248,
+                    252);
 
             dgvPresupuestos.BorderStyle =
                 BorderStyle.None;
@@ -256,43 +319,84 @@ namespace Edelstahl.WinApp.Forms.Commercial
             dgvPresupuestos.ColumnHeadersHeight =
                 42;
 
-            dgvPresupuestos.ColumnHeadersDefaultCellStyle.BackColor =
-                Color.FromArgb(173, 196, 255);
+            dgvPresupuestos
+                .ColumnHeadersDefaultCellStyle
+                .BackColor =
+                    Color.FromArgb(
+                        173,
+                        196,
+                        255);
 
-            dgvPresupuestos.ColumnHeadersDefaultCellStyle.ForeColor =
-                Color.FromArgb(40, 40, 40);
+            dgvPresupuestos
+                .ColumnHeadersDefaultCellStyle
+                .ForeColor =
+                    Color.FromArgb(
+                        40,
+                        40,
+                        40);
 
-            dgvPresupuestos.ColumnHeadersDefaultCellStyle.Font =
-                new Font(
-                    "Segoe UI",
-                    9,
-                    FontStyle.Bold);
+            dgvPresupuestos
+                .ColumnHeadersDefaultCellStyle
+                .Font =
+                    new Font(
+                        "Segoe UI",
+                        9,
+                        FontStyle.Bold);
 
-            dgvPresupuestos.DefaultCellStyle.BackColor =
-                Color.FromArgb(246, 248, 252);
+            dgvPresupuestos
+                .DefaultCellStyle
+                .BackColor =
+                    Color.FromArgb(
+                        246,
+                        248,
+                        252);
 
-            dgvPresupuestos.DefaultCellStyle.SelectionBackColor =
-                Color.FromArgb(205, 219, 250);
+            dgvPresupuestos
+                .DefaultCellStyle
+                .SelectionBackColor =
+                    Color.FromArgb(
+                        205,
+                        219,
+                        250);
 
-            dgvPresupuestos.DefaultCellStyle.SelectionForeColor =
-                Color.FromArgb(30, 30, 30);
+            dgvPresupuestos
+                .DefaultCellStyle
+                .SelectionForeColor =
+                    Color.FromArgb(
+                        30,
+                        30,
+                        30);
 
+            /*
+             * La primera columna contiene el Id
+             * interno del presupuesto.
+             *
+             * Permanece oculta porque solamente se
+             * utiliza para identificar correctamente
+             * el presupuesto seleccionado.
+             */
             dgvPresupuestos.ColumnCount =
-                5;
+                6;
 
             dgvPresupuestos.Columns[0].Name =
-                "Número";
+                "Id";
+
+            dgvPresupuestos.Columns[0].Visible =
+                false;
 
             dgvPresupuestos.Columns[1].Name =
-                "Fecha";
+                "Numero";
 
             dgvPresupuestos.Columns[2].Name =
-                "Estado";
+                "Fecha";
 
             dgvPresupuestos.Columns[3].Name =
-                "Total";
+                "Estado";
 
             dgvPresupuestos.Columns[4].Name =
+                "Total";
+
+            dgvPresupuestos.Columns[5].Name =
                 "Vencimiento";
 
             dgvPresupuestos.CellDoubleClick +=
@@ -303,9 +407,6 @@ namespace Edelstahl.WinApp.Forms.Commercial
 
             lblResultado =
                 new Label();
-
-            lblResultado.Text =
-                "Seleccione un cliente desde el panel principal.";
 
             lblResultado.ForeColor =
                 Color.DimGray;
@@ -319,28 +420,40 @@ namespace Edelstahl.WinApp.Forms.Commercial
                 true;
 
             lblResultado.Location =
-                new Point(25, 525);
+                new Point(
+                    25,
+                    525);
 
             Controls.Add(
                 lblResultado);
 
-            Button btnCancelar =
+            btnCancelar =
                 new Button();
 
-            btnCancelar.Text =
-                "Cancelar";
+            btnCancelar.Name =
+                "btnCancelar";
 
             btnCancelar.Size =
-                new Size(150, 45);
+                new Size(
+                    150,
+                    45);
 
             btnCancelar.Location =
-                new Point(730, 545);
+                new Point(
+                    730,
+                    545);
 
             btnCancelar.BackColor =
-                Color.FromArgb(210, 215, 225);
+                Color.FromArgb(
+                    210,
+                    215,
+                    225);
 
             btnCancelar.ForeColor =
-                Color.FromArgb(50, 50, 50);
+                Color.FromArgb(
+                    50,
+                    50,
+                    50);
 
             btnCancelar.FlatStyle =
                 FlatStyle.Flat;
@@ -357,20 +470,27 @@ namespace Edelstahl.WinApp.Forms.Commercial
             Controls.Add(
                 btnCancelar);
 
-            Button btnSeleccionar =
+            btnSeleccionar =
                 new Button();
 
-            btnSeleccionar.Text =
-                "Seleccionar Presupuesto";
+            btnSeleccionar.Name =
+                "btnSeleccionar";
 
             btnSeleccionar.Size =
-                new Size(170, 45);
+                new Size(
+                    170,
+                    45);
 
             btnSeleccionar.Location =
-                new Point(890, 545);
+                new Point(
+                    890,
+                    545);
 
             btnSeleccionar.BackColor =
-                Color.FromArgb(92, 126, 215);
+                Color.FromArgb(
+                    92,
+                    126,
+                    215);
 
             btnSeleccionar.ForeColor =
                 Color.White;
@@ -389,6 +509,109 @@ namespace Edelstahl.WinApp.Forms.Commercial
 
             Controls.Add(
                 btnSeleccionar);
+
+            AcceptButton =
+                btnBuscar;
+
+            CancelButton =
+                btnCancelar;
+        }
+
+        private void AplicarIdioma()
+        {
+            Text =
+                LanguageService.Translate(
+                    "SeleccionarPresupuesto");
+
+            lblTitulo.Text =
+                LanguageService.Translate(
+                    "SeleccionarPresupuesto");
+
+            lblSubtitulo.Text =
+                LanguageService.Translate(
+                    "PresupuestosDisponiblesCliente");
+
+            btnBuscar.Text =
+                LanguageService.Translate(
+                    "Buscar");
+
+            btnActualizar.Text =
+                LanguageService.Translate(
+                    "Actualizar");
+
+            btnCancelar.Text =
+                LanguageService.Translate(
+                    "Cancelar");
+
+            btnSeleccionar.Text =
+                LanguageService.Translate(
+                    "SeleccionarPresupuesto");
+
+            dgvPresupuestos
+                .Columns[1]
+                .HeaderText =
+                    LanguageService.Translate(
+                        "Numero");
+
+            dgvPresupuestos
+                .Columns[2]
+                .HeaderText =
+                    LanguageService.Translate(
+                        "Fecha");
+
+            dgvPresupuestos
+                .Columns[3]
+                .HeaderText =
+                    LanguageService.Translate(
+                        "Estado");
+
+            dgvPresupuestos
+                .Columns[4]
+                .HeaderText =
+                    LanguageService.Translate(
+                        "Total");
+
+            dgvPresupuestos
+                .Columns[5]
+                .HeaderText =
+                    LanguageService.Translate(
+                        "Vencimiento");
+
+            if (ClienteId == Guid.Empty)
+            {
+                lblResultado.Text =
+                    LanguageService.Translate(
+                        "SeleccioneClientePrincipal");
+
+                lblResultado.ForeColor =
+                    Color.DimGray;
+            }
+            else
+            {
+                ActualizarTextoResultado(
+                    presupuestosCargados.Count);
+            }
+        }
+
+        private void LanguageService_IdiomaCambiado(
+            object sender,
+            EventArgs e)
+        {
+            AplicarIdioma();
+
+            if (ClienteId != Guid.Empty)
+            {
+                MostrarPresupuestos(
+                    presupuestosCargados);
+            }
+        }
+
+        private void FrmSeleccionPresupuesto_FormClosed(
+            object sender,
+            FormClosedEventArgs e)
+        {
+            LanguageService.IdiomaCambiado -=
+                LanguageService_IdiomaCambiado;
         }
 
         public void CargarPresupuestos(
@@ -397,8 +620,10 @@ namespace Edelstahl.WinApp.Forms.Commercial
             if (clienteId == Guid.Empty)
             {
                 MessageBox.Show(
-                    "El cliente seleccionado no tiene un identificador válido.",
-                    "Cliente inválido",
+                    LanguageService.Translate(
+                        "ClienteNoEncontrado"),
+                    LanguageService.Translate(
+                        "ClienteInvalido"),
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
 
@@ -429,8 +654,8 @@ namespace Edelstahl.WinApp.Forms.Commercial
                 }
 
                 presupuestosCargados =
-                    presupuestos
-                    ?? new List<Presupuesto>();
+                    presupuestos ??
+                    new List<Presupuesto>();
 
                 MostrarPresupuestos(
                     presupuestosCargados);
@@ -440,14 +665,20 @@ namespace Edelstahl.WinApp.Forms.Commercial
                 dgvPresupuestos.Rows.Clear();
 
                 lblResultado.Text =
-                    "No fue posible cargar los presupuestos.";
+                    LanguageService.Translate(
+                        "ErrorCargarPresupuestos");
 
                 lblResultado.ForeColor =
                     Color.Firebrick;
 
                 MessageBox.Show(
+                    LanguageService.Translate(
+                        "ErrorCargarPresupuestos") +
+                    Environment.NewLine +
+                    Environment.NewLine +
                     ex.Message,
-                    "Error al cargar presupuestos",
+                    LanguageService.Translate(
+                        "ErrorBaseDatos"),
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
             }
@@ -468,11 +699,12 @@ namespace Edelstahl.WinApp.Forms.Commercial
                         : "$";
 
                 dgvPresupuestos.Rows.Add(
+                    presupuesto.Id,
                     presupuesto.Numero,
                     presupuesto.FechaEmision
                         .ToShortDateString(),
-                    presupuesto.Estado
-                        .ToString(),
+                    ObtenerEstadoTraducido(
+                        presupuesto.Estado),
                     moneda +
                     presupuesto
                         .CalcularTotal()
@@ -486,16 +718,33 @@ namespace Edelstahl.WinApp.Forms.Commercial
             dgvPresupuestos.CurrentCell =
                 null;
 
+            ActualizarTextoResultado(
+                presupuestos.Count);
+        }
+
+        private void ActualizarTextoResultado(
+            int cantidad)
+        {
+            if (cantidad == 0)
+            {
+                lblResultado.Text =
+                    LanguageService.Translate(
+                        "NoPresupuestosEncontrados");
+
+                lblResultado.ForeColor =
+                    Color.Firebrick;
+
+                return;
+            }
+
             lblResultado.Text =
-                presupuestos.Count == 0
-                    ? "No se encontraron presupuestos."
-                    : "Presupuestos encontrados: " +
-                      presupuestos.Count;
+                LanguageService.Translate(
+                    "PresupuestosEncontrados") +
+                ": " +
+                cantidad;
 
             lblResultado.ForeColor =
-                presupuestos.Count == 0
-                    ? Color.Firebrick
-                    : Color.ForestGreen;
+                Color.ForestGreen;
         }
 
         private void BuscarPresupuestos()
@@ -503,8 +752,10 @@ namespace Edelstahl.WinApp.Forms.Commercial
             if (ClienteId == Guid.Empty)
             {
                 MessageBox.Show(
-                    "Debe seleccionar un cliente primero.",
-                    "Cliente requerido",
+                    LanguageService.Translate(
+                        "ClientePrimero"),
+                    LanguageService.Translate(
+                        "ClienteRequerido"),
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
 
@@ -524,22 +775,41 @@ namespace Edelstahl.WinApp.Forms.Commercial
             {
                 resultados =
                     presupuestosCargados
-                    .Where(
-                        presupuesto =>
-                            (presupuesto.Numero ??
-                             string.Empty)
-                            .ToLowerInvariant()
-                            .Contains(filtro)
-                            ||
-                            presupuesto.Estado
-                            .ToString()
-                            .ToLowerInvariant()
-                            .Contains(filtro))
-                    .ToList();
+                        .Where(
+                            presupuesto =>
+                                CoincideConFiltro(
+                                    presupuesto,
+                                    filtro))
+                        .ToList();
             }
 
             MostrarPresupuestos(
                 resultados);
+        }
+
+        private static bool CoincideConFiltro(
+            Presupuesto presupuesto,
+            string filtro)
+        {
+            string numero =
+                (presupuesto.Numero ??
+                 string.Empty)
+                    .ToLowerInvariant();
+
+            string estadoOriginal =
+                presupuesto.Estado
+                    .ToString()
+                    .ToLowerInvariant();
+
+            string estadoTraducido =
+                ObtenerEstadoTraducido(
+                    presupuesto.Estado)
+                    .ToLowerInvariant();
+
+            return
+                numero.Contains(filtro) ||
+                estadoOriginal.Contains(filtro) ||
+                estadoTraducido.Contains(filtro);
         }
 
         private void BtnBuscar_Click(
@@ -555,8 +825,23 @@ namespace Edelstahl.WinApp.Forms.Commercial
         {
             txtBuscar.Clear();
 
+            if (ClienteId == Guid.Empty)
+            {
+                MessageBox.Show(
+                    LanguageService.Translate(
+                        "ClientePrimero"),
+                    LanguageService.Translate(
+                        "ClienteRequerido"),
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                return;
+            }
+
             CargarPresupuestos(
                 ClienteId);
+
+            txtBuscar.Focus();
         }
 
         private void TxtBuscar_KeyDown(
@@ -571,6 +856,9 @@ namespace Edelstahl.WinApp.Forms.Commercial
             e.SuppressKeyPress =
                 true;
 
+            e.Handled =
+                true;
+
             BuscarPresupuestos();
         }
 
@@ -582,6 +870,9 @@ namespace Edelstahl.WinApp.Forms.Commercial
             {
                 return;
             }
+
+            dgvPresupuestos.Rows[e.RowIndex]
+                .Selected = true;
 
             SeleccionarPresupuestoActual();
         }
@@ -598,42 +889,44 @@ namespace Edelstahl.WinApp.Forms.Commercial
             if (dgvPresupuestos.SelectedRows.Count == 0)
             {
                 MessageBox.Show(
-                    "Debe seleccionar un presupuesto.",
-                    "Presupuesto requerido",
+                    LanguageService.Translate(
+                        "PresupuestoRequerido"),
+                    LanguageService.Translate(
+                        "SeleccionarPresupuesto"),
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
 
                 return;
             }
 
-            object valorNumero =
+            object valorId =
                 dgvPresupuestos
                     .SelectedRows[0]
                     .Cells[0]
                     .Value;
 
-            string numero =
-                valorNumero == null
-                    ? string.Empty
-                    : valorNumero.ToString();
+            Guid presupuestoId;
+
+            if (valorId == null ||
+                !Guid.TryParse(
+                    valorId.ToString(),
+                    out presupuestoId))
+            {
+                MostrarPresupuestoNoEncontrado();
+
+                return;
+            }
 
             PresupuestoSeleccionado =
                 presupuestosCargados
                     .FirstOrDefault(
                         presupuesto =>
-                            string.Equals(
-                                presupuesto.Numero,
-                                numero,
-                                StringComparison
-                                    .OrdinalIgnoreCase));
+                            presupuesto.Id ==
+                            presupuestoId);
 
             if (PresupuestoSeleccionado == null)
             {
-                MessageBox.Show(
-                    "No fue posible recuperar el presupuesto seleccionado.",
-                    "Presupuesto no encontrado",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
+                MostrarPresupuestoNoEncontrado();
 
                 return;
             }
@@ -642,9 +935,10 @@ namespace Edelstahl.WinApp.Forms.Commercial
                 .PuedeConfirmarse())
             {
                 MessageBox.Show(
-                    "El presupuesto seleccionado no puede confirmarse. " +
-                    "Debe estar aceptado, vigente y contener detalles.",
-                    "Presupuesto no confirmable",
+                    LanguageService.Translate(
+                        "DetallePresupuestoNoConfirmable"),
+                    LanguageService.Translate(
+                        "PresupuestoNoConfirmable"),
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
 
@@ -655,6 +949,39 @@ namespace Edelstahl.WinApp.Forms.Commercial
                 DialogResult.OK;
 
             Close();
+        }
+
+        private static string ObtenerEstadoTraducido(
+            EstadoPresupuesto estado)
+        {
+            string clave =
+                "EstadoPresupuesto_" +
+                estado;
+
+            string traduccion =
+                LanguageService.Translate(
+                    clave);
+
+            if (string.Equals(
+                traduccion,
+                clave,
+                StringComparison.OrdinalIgnoreCase))
+            {
+                return estado.ToString();
+            }
+
+            return traduccion;
+        }
+
+        private static void MostrarPresupuestoNoEncontrado()
+        {
+            MessageBox.Show(
+                LanguageService.Translate(
+                    "PresupuestoNoEncontrado"),
+                LanguageService.Translate(
+                    "SeleccionarPresupuesto"),
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error);
         }
 
         private void BtnCancelar_Click(

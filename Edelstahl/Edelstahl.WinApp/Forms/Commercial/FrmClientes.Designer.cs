@@ -55,9 +55,15 @@
             this.colLocalidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colRazonSocial = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnLimpiar = new System.Windows.Forms.Button();
+            this.grpBusqueda = new System.Windows.Forms.GroupBox();
+            this.lblBuscarCliente = new System.Windows.Forms.Label();
+            this.txtBuscarCliente = new System.Windows.Forms.TextBox();
+            this.btnBuscarCliente = new System.Windows.Forms.Button();
+            this.btnMostrarTodos = new System.Windows.Forms.Button();
             this.grpDatosCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudLimiteCredito)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
+            this.grpBusqueda.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -243,11 +249,12 @@
             this.lblListado.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblListado.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.lblListado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
-            this.lblListado.Location = new System.Drawing.Point(21, 390);
+            this.lblListado.Location = new System.Drawing.Point(27, 496);
             this.lblListado.Name = "lblListado";
             this.lblListado.Size = new System.Drawing.Size(139, 20);
             this.lblListado.TabIndex = 9;
             this.lblListado.Text = "Clientes registrados";
+            this.lblListado.Click += new System.EventHandler(this.lblListado_Click);
             // 
             // dgvClientes
             // 
@@ -268,13 +275,13 @@
             this.colEmail,
             this.colLocalidad,
             this.colRazonSocial});
-            this.dgvClientes.Location = new System.Drawing.Point(25, 432);
+            this.dgvClientes.Location = new System.Drawing.Point(24, 532);
             this.dgvClientes.MultiSelect = false;
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.ReadOnly = true;
             this.dgvClientes.RowHeadersVisible = false;
             this.dgvClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvClientes.Size = new System.Drawing.Size(1120, 204);
+            this.dgvClientes.Size = new System.Drawing.Size(1121, 253);
             this.dgvClientes.TabIndex = 9;
             // 
             // colCUIT
@@ -338,11 +345,65 @@
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
             // 
+            // grpBusqueda
+            // 
+            this.grpBusqueda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpBusqueda.Controls.Add(this.btnMostrarTodos);
+            this.grpBusqueda.Controls.Add(this.btnBuscarCliente);
+            this.grpBusqueda.Controls.Add(this.txtBuscarCliente);
+            this.grpBusqueda.Controls.Add(this.lblBuscarCliente);
+            this.grpBusqueda.Location = new System.Drawing.Point(30, 391);
+            this.grpBusqueda.Name = "grpBusqueda";
+            this.grpBusqueda.Size = new System.Drawing.Size(1120, 92);
+            this.grpBusqueda.TabIndex = 10;
+            this.grpBusqueda.TabStop = false;
+            this.grpBusqueda.Text = "Buscar clientes";
+            // 
+            // lblBuscarCliente
+            // 
+            this.lblBuscarCliente.AutoSize = true;
+            this.lblBuscarCliente.Location = new System.Drawing.Point(20, 32);
+            this.lblBuscarCliente.Name = "lblBuscarCliente";
+            this.lblBuscarCliente.Size = new System.Drawing.Size(103, 13);
+            this.lblBuscarCliente.TabIndex = 0;
+            this.lblBuscarCliente.Text = "CUIT o razón social:";
+            // 
+            // txtBuscarCliente
+            // 
+            this.txtBuscarCliente.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBuscarCliente.Location = new System.Drawing.Point(160, 28);
+            this.txtBuscarCliente.Name = "txtBuscarCliente";
+            this.txtBuscarCliente.Size = new System.Drawing.Size(560, 20);
+            this.txtBuscarCliente.TabIndex = 0;
+            // 
+            // btnBuscarCliente
+            // 
+            this.btnBuscarCliente.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBuscarCliente.Location = new System.Drawing.Point(750, 25);
+            this.btnBuscarCliente.Name = "btnBuscarCliente";
+            this.btnBuscarCliente.Size = new System.Drawing.Size(145, 32);
+            this.btnBuscarCliente.TabIndex = 1;
+            this.btnBuscarCliente.Text = "Buscar";
+            this.btnBuscarCliente.UseVisualStyleBackColor = true;
+            // 
+            // btnMostrarTodos
+            // 
+            this.btnMostrarTodos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMostrarTodos.Location = new System.Drawing.Point(910, 25);
+            this.btnMostrarTodos.Name = "btnMostrarTodos";
+            this.btnMostrarTodos.Size = new System.Drawing.Size(170, 32);
+            this.btnMostrarTodos.TabIndex = 2;
+            this.btnMostrarTodos.Text = "Mostrar todos";
+            this.btnMostrarTodos.UseVisualStyleBackColor = true;
+            // 
             // FrmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1163, 648);
+            this.ClientSize = new System.Drawing.Size(1164, 811);
+            this.Controls.Add(this.grpBusqueda);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.lblListado);
@@ -351,12 +412,15 @@
             this.Controls.Add(this.grpDatosCliente);
             this.Controls.Add(this.lblSubtitulo);
             this.Controls.Add(this.lblTitulo);
+            this.MinimumSize = new System.Drawing.Size(1180, 850);
             this.Name = "FrmClientes";
             this.Text = "FrmClientes";
             this.grpDatosCliente.ResumeLayout(false);
             this.grpDatosCliente.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudLimiteCredito)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
+            this.grpBusqueda.ResumeLayout(false);
+            this.grpBusqueda.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -391,5 +455,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colLocalidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn colRazonSocial;
         private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.GroupBox grpBusqueda;
+        private System.Windows.Forms.Button btnMostrarTodos;
+        private System.Windows.Forms.Button btnBuscarCliente;
+        private System.Windows.Forms.TextBox txtBuscarCliente;
+        private System.Windows.Forms.Label lblBuscarCliente;
     }
 }

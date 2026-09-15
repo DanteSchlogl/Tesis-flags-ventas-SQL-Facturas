@@ -85,3 +85,87 @@ Observaciones:Notes
 Si:Yes
 No:No
 RespaldoDatos:Data Backup
+IniciarSesion:Sign In
+NombreUsuario:Username
+Contrasena:Password
+CerrarSesion:Sign Out
+UsuarioActual:Current User
+Bienvenido:Welcome
+CredencialesInvalidas:The username or password is incorrect
+SeleccionarModoInicio:Select Start-up Mode
+IniciarConSqlServer:Start with SQL Server
+IniciarModoDemostracion:Start Demonstration Mode
+SalirAplicacion:Exit Application
+BaseDatosDisponible:Database Available
+BaseDatosNoDisponible:Database Unavailable
+ModoDemostracion:Demonstration Mode
+BuscarClientes:Search Customers
+MostrarTodos:Show All
+ClienteRequerido:Please select a customer
+ClienteNoEncontrado:Customer not found
+BusquedaSinResultados:No results were found
+ClienteDuplicado:A customer with the entered Tax ID already exists
+ClienteRegistradoCorrectamente:Customer registered successfully
+ActualizarListado:Refresh List
+SeleccionCliente:Customer Selection
+SeleccionPresupuesto:Quotation Selection
+RevisionProductos:Product Review
+ValidacionCredito:Credit Validation
+RegistroSena:Deposit Registration
+ResumenConfirmacion:Confirmation Summary
+ResultadoOperacion:Operation Result
+CreditoSuficiente:Sufficient Credit
+CreditoInsuficiente:Insufficient Credit
+PresupuestoConfirmable:Quotation available for confirmation
+PresupuestoNoConfirmable:The quotation cannot be confirmed
+ConfirmarGeneracionPedido:Do you wish to confirm the order?
+ImportarClientes:Import Customers
+SeleccionarArchivo:Select File
+ArchivoSeleccionado:File Selected
+ArchivoNoSeleccionado:No File Selected
+RegistrosDetectados:Records Detected
+RegistrosImportados:Records Imported
+RegistrosOmitidos:Records Skipped
+ImportacionFinalizada:Import Completed
+ImportacionConErrores:The import completed with errors
+DatosProtegidos:Protected Data
+CifradoSimetrico:Symmetric Encryption
+CUITCifrado:Encrypted Tax ID
+ErrorDescifrado:The data could not be decrypted
+IntegridadInvalida:Data integrity validation failed
+CrearRespaldo:Create Backup
+RestaurarRespaldo:Restore Backup
+SeleccionarDestino:Select Destination
+RespaldoExitoso:Backup completed successfully
+RestauracionExitosa:Restoration completed successfully
+ErrorBaseDatos:Database Error
+ConexionExitosa:Connection completed successfully
+DescripcionRegistrarSena:Enter the exact deposit required to confirm the order
+SenaPendiente:Deposit pending
+TransferenciaBancaria:Bank transfer
+DepositoBancario:Bank deposit
+Cheque:Cheque
+Efectivo:Cash
+Tarjeta:Card
+SenaNoRequerida:Deposit not required
+PresupuestoSinAnticipo:The selected quotation does not require a deposit
+ImporteInsuficiente:Insufficient amount
+MensajeImporteInsuficiente:The amount received is insufficient. The required deposit is
+ImporteSuperior:Amount exceeds the required deposit
+MensajeImporteSuperior:The amount received cannot exceed the required deposit of
+MedioPagoRequerido:Payment method required
+DebeSeleccionarMedioPago:Please select a payment method
+ComprobanteRequerido:Receipt required
+ErrorGenerarComprobante:The receipt number could not be generated
+FechaIncorrecta:Invalid date
+FechaPagoFutura:The payment date cannot be in the future
+SenaRegistradaCorrectamente:Deposit registered successfully
+MensajeSenaRegistrada:The deposit was registered successfully
+Importe:Amount
+Comprobante:Receipt
+SubtituloLogin:Enter your credentials to continue
+MostrarContrasena:Show password
+AccesoDenegado:Access denied
+DescripcionModoInicio:Select how you want to run Edelstahl ERP
+DescripcionModoSql:Uses the databases, sign-in, audit log, persistence, and Tax ID encryption
+DescripcionModoDemo:Allows you to explore the interface using temporary data without connecting to SQL Server

@@ -1,11 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 using Edelstahl.BLL.Exceptions.Base;
 using Edelstahl.BLL.Services;
 using Edelstahl.Domain.Comercial;
-using Edelstahl.Services.Localization;
-
-
 
 namespace Edelstahl.WinApp.Forms.Commercial
 {
@@ -52,6 +51,24 @@ namespace Edelstahl.WinApp.Forms.Commercial
 
             btnLimpiar.Click +=
                 btnLimpiar_Click;
+
+            btnBuscarCliente.Click -=
+                btnBuscarCliente_Click;
+
+            btnBuscarCliente.Click +=
+                btnBuscarCliente_Click;
+
+            btnMostrarTodos.Click -=
+                btnMostrarTodos_Click;
+
+            btnMostrarTodos.Click +=
+                btnMostrarTodos_Click;
+
+            txtBuscarCliente.KeyDown -=
+                txtBuscarCliente_KeyDown;
+
+            txtBuscarCliente.KeyDown +=
+                txtBuscarCliente_KeyDown;
         }
 
         private void ConfigurarGrilla()
@@ -109,10 +126,9 @@ namespace Edelstahl.WinApp.Forms.Commercial
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
 
-                DialogResult =
-                    DialogResult.OK;
+                LimpiarCampos();
 
-                Close();
+                txtCUIT.Focus();
             }
             catch (BusinessRuleException ex)
             {
@@ -152,6 +168,121 @@ namespace Edelstahl.WinApp.Forms.Commercial
             }
         }
 
+        private void btnBuscarCliente_Click(
+            object sender,
+            EventArgs e)
+        {
+            BuscarClientes();
+        }
+
+        private void btnMostrarTodos_Click(
+            object sender,
+            EventArgs e)
+        {
+            txtBuscarCliente.Clear();
+
+            RefrescarGrilla();
+
+            txtBuscarCliente.Focus();
+        }
+
+        private void txtBuscarCliente_KeyDown(
+            object sender,
+            KeyEventArgs e)
+        {
+            if (e.KeyCode != Keys.Enter)
+            {
+                return;
+            }
+
+            e.SuppressKeyPress = true;
+            e.Handled = true;
+
+            BuscarClientes();
+        }
+
+        private void BuscarClientes()
+        {
+            try
+            {
+                string filtro =
+                    txtBuscarCliente.Text.Trim();
+
+                if (string.IsNullOrWhiteSpace(filtro))
+                {
+                    RefrescarGrilla();
+                    return;
+                }
+
+                string filtroCUIT =
+                    NormalizarCUIT(filtro);
+
+                string filtroTexto =
+                    filtro.ToLowerInvariant();
+
+                List<Cliente> clientes =
+                    _clienteService.ObtenerTodos();
+
+                List<Cliente> resultados =
+                    clientes
+                        .Where(cliente =>
+                        {
+                            string cuitCliente =
+                                NormalizarCUIT(
+                                    cliente.CUIT);
+
+                            string razonSocial =
+                                (cliente.RazonSocial ??
+                                 string.Empty)
+                                .ToLowerInvariant();
+
+                            bool coincideCUIT =
+                                !string.IsNullOrWhiteSpace(
+                                    filtroCUIT) &&
+                                cuitCliente.Contains(
+                                    filtroCUIT);
+
+                            bool coincideRazonSocial =
+                                razonSocial.Contains(
+                                    filtroTexto);
+
+                            return coincideCUIT ||
+                                   coincideRazonSocial;
+                        })
+                        .OrderBy(
+                            cliente =>
+                                cliente.RazonSocial)
+                        .ToList();
+
+                MostrarClientesEnGrilla(
+                    resultados);
+
+                if (resultados.Count == 0)
+                {
+                    MessageBox.Show(
+                        "No se encontraron clientes que coincidan " +
+                        "con el criterio ingresado.",
+                        "Búsqueda sin resultados",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information);
+
+                    txtBuscarCliente.Focus();
+                    txtBuscarCliente.SelectAll();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "No se pudo realizar la búsqueda." +
+                    Environment.NewLine +
+                    Environment.NewLine +
+                    ex.Message,
+                    "Error de búsqueda",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
+
         private void ValidarFormulario()
         {
             string cuit =
@@ -163,8 +294,6 @@ namespace Edelstahl.WinApp.Forms.Commercial
                 MostrarAdvertencia(
                     "Debe ingresar el CUIT del cliente.",
                     txtCUIT);
-
-                return;
             }
 
             if (cuit.Length != 11)
@@ -172,8 +301,6 @@ namespace Edelstahl.WinApp.Forms.Commercial
                 MostrarAdvertencia(
                     "El CUIT debe contener 11 números.",
                     txtCUIT);
-
-                return;
             }
 
             long cuitNumerico;
@@ -185,8 +312,6 @@ namespace Edelstahl.WinApp.Forms.Commercial
                 MostrarAdvertencia(
                     "El CUIT solamente puede contener números.",
                     txtCUIT);
-
-                return;
             }
 
             if (string.IsNullOrWhiteSpace(
@@ -195,34 +320,23 @@ namespace Edelstahl.WinApp.Forms.Commercial
                 MostrarAdvertencia(
                     "Debe ingresar la razón social del cliente.",
                     txtRazonSocial);
-
-                return;
             }
 
             if (!string.IsNullOrWhiteSpace(
-                txtEmail.Text) &&
+                    txtEmail.Text) &&
                 !EmailPareceValido(
                     txtEmail.Text))
             {
                 MostrarAdvertencia(
                     "El correo electrónico ingresado no parece válido.",
                     txtEmail);
-
-                return;
             }
 
             if (nudLimiteCredito.Value < 0m)
             {
-                MessageBox.Show(
+                MostrarAdvertencia(
                     "El límite de crédito no puede ser negativo.",
-                    "Límite de crédito incorrecto",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning);
-
-                nudLimiteCredito.Focus();
-
-                throw new ArgumentException(
-                    "El límite de crédito no puede ser negativo.");
+                    nudLimiteCredito);
             }
         }
 
@@ -299,10 +413,13 @@ namespace Edelstahl.WinApp.Forms.Commercial
         {
             try
             {
+                txtBuscarCliente.Clear();
+
                 RefrescarGrilla();
 
                 MessageBox.Show(
-                    "El listado de clientes fue actualizado desde SQL Server.",
+                    "El listado de clientes fue actualizado " +
+                    "desde SQL Server.",
                     "Listado actualizado",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
@@ -331,11 +448,21 @@ namespace Edelstahl.WinApp.Forms.Commercial
 
         private void RefrescarGrilla()
         {
+            List<Cliente> clientes =
+                _clienteService.ObtenerTodos();
+
+            MostrarClientesEnGrilla(
+                clientes);
+        }
+
+        private void MostrarClientesEnGrilla(
+            List<Cliente> clientes)
+        {
             dgvClientes.DataSource =
                 null;
 
             dgvClientes.DataSource =
-                _clienteService.ObtenerTodos();
+                clientes;
 
             dgvClientes.ClearSelection();
 
@@ -397,10 +524,23 @@ namespace Edelstahl.WinApp.Forms.Commercial
                    emailLimpio.Length - 1;
         }
 
+        /*
+         * Este método se mantiene temporalmente porque
+         * puede continuar conectado desde el Designer.
+         * No contiene lógica para evitar registrar dos veces.
+         */
         private void btnGuardar_Click_1(
+     object sender,
+     EventArgs e)
+        {
+        }
+
+        private void lblListado_Click(
             object sender,
             EventArgs e)
         {
+            // Evento conservado porque está conectado
+            // desde FrmClientes.Designer.cs.
         }
     }
 }

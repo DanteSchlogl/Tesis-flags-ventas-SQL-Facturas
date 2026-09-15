@@ -51,5 +51,121 @@ AnticipoRegistrado:Anticipo registrado
 SaldoFacturar:Saldo a facturar
 Items:Ítems
 Total:TOTAL
-Codigo:C
+Codigo:Código
+Descripcion:Descripción
+Cantidad:Cantidad
+Precio:Precio
+Numero:Número
+Fecha:Fecha
+Usuario:Usuario
+RazonSocial:Razón social
+CUIT:CUIT
+Correo:Correo electrónico
+Telefono:Teléfono
+Localidad:Localidad
+Provincia:Provincia
+CodigoPostal:Código postal
+LimiteCredito:Límite de crédito
+DeudaActual:Deuda actual
+Activo:Activo
+MedioPago:Medio de pago
+NumeroComprobante:Número de comprobante
+FechaPago:Fecha de pago
+PresupuestosDisponibles:Presupuestos disponibles
+ClientesRegistrados:Clientes registrados
+GestionClientes:Gestión de clientes
+DatosCliente:Datos del cliente
+ImporteRecibido:Importe recibido
+ComprobantePedido:Comprobante del pedido
+InformacionComercial:Información comercial
+CondicionPago:Condición de pago
+PlazoEntrega:Plazo de entrega
+EntregaIncluida:Entrega incluida
+Observaciones:Observaciones
+Si:Sí
+No:No
 RespaldoDatos:Respaldo de datos
+IniciarSesion:Iniciar sesión
+NombreUsuario:Nombre de usuario
+Contrasena:Contraseña
+CerrarSesion:Cerrar sesión
+UsuarioActual:Usuario actual
+Bienvenido:Bienvenido
+CredencialesInvalidas:El usuario o la contraseña son incorrectos
+SeleccionarModoInicio:Seleccione el modo de inicio
+IniciarConSqlServer:Iniciar con SQL Server
+IniciarModoDemostracion:Iniciar modo demostración
+SalirAplicacion:Salir de la aplicación
+BaseDatosDisponible:Base de datos disponible
+BaseDatosNoDisponible:Base de datos no disponible
+ModoDemostracion:Modo demostración
+BuscarClientes:Buscar clientes
+MostrarTodos:Mostrar todos
+ClienteRequerido:Debe seleccionar un cliente
+ClienteNoEncontrado:No se encontró el cliente
+BusquedaSinResultados:No se encontraron resultados
+ClienteDuplicado:Ya existe un cliente con el CUIT ingresado
+ClienteRegistradoCorrectamente:Cliente registrado correctamente
+ActualizarListado:Actualizar listado
+SeleccionCliente:Selección del cliente
+SeleccionPresupuesto:Selección del presupuesto
+RevisionProductos:Revisión de productos
+ValidacionCredito:Validación de crédito
+RegistroSena:Registro de seña
+ResumenConfirmacion:Resumen de confirmación
+ResultadoOperacion:Resultado de la operación
+CreditoSuficiente:Crédito suficiente
+CreditoInsuficiente:Crédito insuficiente
+PresupuestoConfirmable:Presupuesto disponible para confirmar
+PresupuestoNoConfirmable:El presupuesto no puede confirmarse
+ConfirmarGeneracionPedido:¿Confirma la generación del pedido?
+ImportarClientes:Importar clientes
+SeleccionarArchivo:Seleccionar archivo
+ArchivoSeleccionado:Archivo seleccionado
+ArchivoNoSeleccionado:Ningún archivo seleccionado
+RegistrosDetectados:Registros detectados
+RegistrosImportados:Registros importados
+RegistrosOmitidos:Registros omitidos
+ImportacionFinalizada:Importación finalizada
+ImportacionConErrores:La importación finalizó con errores
+DatosProtegidos:Datos protegidos
+CifradoSimetrico:Cifrado simétrico
+CUITCifrado:CUIT cifrado
+ErrorDescifrado:No fue posible descifrar el dato
+IntegridadInvalida:La integridad del dato no es válida
+CrearRespaldo:Crear respaldo
+RestaurarRespaldo:Restaurar respaldo
+SeleccionarDestino:Seleccionar destino
+RespaldoExitoso:El respaldo se realizó correctamente
+RestauracionExitosa:La restauración se realizó correctamente
+ErrorBaseDatos:Error de base de datos
+ConexionExitosa:Conexión realizada correctamente
+DescripcionRegistrarSena:Ingrese el anticipo exacto requerido para confirmar el pedido
+SenaPendiente:Seña pendiente
+TransferenciaBancaria:Transferencia bancaria
+DepositoBancario:Depósito bancario
+Cheque:Cheque
+Efectivo:Efectivo
+Tarjeta:Tarjeta
+SenaNoRequerida:Seña no requerida
+PresupuestoSinAnticipo:El presupuesto seleccionado no requiere anticipo
+ImporteInsuficiente:Importe insuficiente
+MensajeImporteInsuficiente:El importe recibido no alcanza. El anticipo requerido es
+ImporteSuperior:Importe superior al requerido
+MensajeImporteSuperior:El importe recibido no puede superar el anticipo requerido de
+MedioPagoRequerido:Medio de pago requerido
+DebeSeleccionarMedioPago:Debe seleccionar un medio de pago
+ComprobanteRequerido:Comprobante requerido
+ErrorGenerarComprobante:No se pudo generar el número de comprobante
+FechaIncorrecta:Fecha incorrecta
+FechaPagoFutura:La fecha del pago no puede ser futura
+SenaRegistradaCorrectamente:Seña registrada correctamente
+MensajeSenaRegistrada:La seña fue registrada correctamente
+Importe:Importe
+Comprobante:Comprobante
+SubtituloLogin:Ingresá tus credenciales para continuar
+MostrarContrasena:Mostrar contraseña
+AccesoDenegado:Acceso denegado
+DescripcionModoInicio:Seleccione cómo desea ejecutar Edelstahl ERP
+DescripcionModoSql:Utiliza las bases de datos, el inicio de sesión, la bitácora, la persistencia y el cifrado del CUIT
+DescripcionModoDemo:Permite recorrer la interfaz utilizando información temporal sin conectarse a SQL Server

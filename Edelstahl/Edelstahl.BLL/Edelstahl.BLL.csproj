@@ -52,6 +52,7 @@
     <Compile Include="Services\ClienteImportService.cs" />
     <Compile Include="Services\ClienteService.cs" />
     <Compile Include="Services\ConfirmarPedidoService.cs" />
+    <Compile Include="Services\DemoAuthenticationService.cs" />
     <Compile Include="Services\PedidoService.cs" />
     <Compile Include="Services\PresupuestoService.cs" />
     <Compile Include="Services\RespaldoService.cs" />

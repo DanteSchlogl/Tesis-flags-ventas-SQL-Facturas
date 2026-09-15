@@ -85,3 +85,87 @@ Observaciones:Observações
 Si:Sim
 No:Não
 RespaldoDatos:Backup de dados
+IniciarSesion:Entrar
+NombreUsuario:Nome de usuário
+Contrasena:Senha
+CerrarSesion:Sair
+UsuarioActual:Usuário atual
+Bienvenido:Bem-vindo
+CredencialesInvalidas:O usuário ou a senha estão incorretos
+SeleccionarModoInicio:Selecione o modo de inicialização
+IniciarConSqlServer:Iniciar com SQL Server
+IniciarModoDemostracion:Iniciar modo de demonstração
+SalirAplicacion:Sair do aplicativo
+BaseDatosDisponible:Banco de dados disponível
+BaseDatosNoDisponible:Banco de dados indisponível
+ModoDemostracion:Modo de demonstração
+BuscarClientes:Pesquisar clientes
+MostrarTodos:Mostrar todos
+ClienteRequerido:Selecione um cliente
+ClienteNoEncontrado:Cliente não encontrado
+BusquedaSinResultados:Nenhum resultado encontrado
+ClienteDuplicado:Já existe um cliente com a identificação fiscal informada
+ClienteRegistradoCorrectamente:Cliente cadastrado com sucesso
+ActualizarListado:Atualizar lista
+SeleccionCliente:Seleção do cliente
+SeleccionPresupuesto:Seleção do orçamento
+RevisionProductos:Revisão dos produtos
+ValidacionCredito:Validação de crédito
+RegistroSena:Registro da entrada
+ResumenConfirmacion:Resumo da confirmação
+ResultadoOperacion:Resultado da operação
+CreditoSuficiente:Crédito suficiente
+CreditoInsuficiente:Crédito insuficiente
+PresupuestoConfirmable:Orçamento disponível para confirmação
+PresupuestoNoConfirmable:O orçamento não pode ser confirmado
+ConfirmarGeneracionPedido:Deseja confirmar a geração do pedido?
+ImportarClientes:Importar clientes
+SeleccionarArchivo:Selecionar arquivo
+ArchivoSeleccionado:Arquivo selecionado
+ArchivoNoSeleccionado:Nenhum arquivo selecionado
+RegistrosDetectados:Registros detectados
+RegistrosImportados:Registros importados
+RegistrosOmitidos:Registros ignorados
+ImportacionFinalizada:Importação concluída
+ImportacionConErrores:A importação foi concluída com erros
+DatosProtegidos:Dados protegidos
+CifradoSimetrico:Criptografia simétrica
+CUITCifrado:Identificação fiscal criptografada
+ErrorDescifrado:Não foi possível descriptografar o dado
+IntegridadInvalida:A integridade do dado não é válida
+CrearRespaldo:Criar backup
+RestaurarRespaldo:Restaurar backup
+SeleccionarDestino:Selecionar destino
+RespaldoExitoso:Backup realizado com sucesso
+RestauracionExitosa:Restauração realizada com sucesso
+ErrorBaseDatos:Erro no banco de dados
+ConexionExitosa:Conexão realizada com sucesso
+DescripcionRegistrarSena:Informe o valor exato da entrada necessária para confirmar o pedido
+SenaPendiente:Entrada pendente
+TransferenciaBancaria:Transferência bancária
+DepositoBancario:Depósito bancário
+Cheque:Cheque
+Efectivo:Dinheiro
+Tarjeta:Cartão
+SenaNoRequerida:Entrada não necessária
+PresupuestoSinAnticipo:O orçamento selecionado não requer entrada
+ImporteInsuficiente:Valor insuficiente
+MensajeImporteInsuficiente:O valor recebido é insuficiente. A entrada necessária é
+ImporteSuperior:Valor superior ao necessário
+MensajeImporteSuperior:O valor recebido não pode superar a entrada necessária de
+MedioPagoRequerido:Forma de pagamento necessária
+DebeSeleccionarMedioPago:Selecione uma forma de pagamento
+ComprobanteRequerido:Comprovante necessário
+ErrorGenerarComprobante:Não foi possível gerar o número do comprovante
+FechaIncorrecta:Data incorreta
+FechaPagoFutura:A data do pagamento não pode ser futura
+SenaRegistradaCorrectamente:Entrada registrada com sucesso
+MensajeSenaRegistrada:A entrada foi registrada com sucesso
+Importe:Valor
+Comprobante:Comprovante
+SubtituloLogin:Informe suas credenciais para continuar
+MostrarContrasena:Mostrar senha
+AccesoDenegado:Acesso negado
+DescripcionModoInicio:Selecione como deseja executar o Edelstahl ERP
+DescripcionModoSql:Utiliza os bancos de dados, o login, a auditoria, a persistência e a criptografia da identificação fiscal
+DescripcionModoDemo:Permite explorar a interface usando dados temporários sem conexão com o SQL Server

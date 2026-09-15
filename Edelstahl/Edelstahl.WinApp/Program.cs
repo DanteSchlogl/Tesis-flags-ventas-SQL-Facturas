@@ -2,6 +2,9 @@
 using System.Windows.Forms;
 using Edelstahl.BLL.Services;
 using Edelstahl.DAL.EntityFramework;
+using Edelstahl.DAL.Factory;
+using Edelstahl.Services.Configuration;
+using Edelstahl.WinApp.Forms.Startup;
 using Edelstahl.WinApp.Infrastructure;
 
 namespace Edelstahl.WinApp
@@ -23,33 +26,31 @@ namespace Edelstahl.WinApp
 
             try
             {
-                InicializadorNegocio.Inicializar();
+                ApplicationMode.Reset();
 
-                UsuarioService usuarioService =
-                    new UsuarioService();
-
-                if (!usuarioService.ExisteAdministrador())
+                using (FrmSeleccionModo selectorModo =
+                    new FrmSeleccionModo())
                 {
-                    using (
-                        FrmCrearAdministradorInicial configuracion =
-                            new FrmCrearAdministradorInicial())
-                    {
-                        if (configuracion.ShowDialog() !=
-                            DialogResult.OK)
-                        {
-                            return;
-                        }
-                    }
-                }
-
-                using (FrmLogin login =
-                    new FrmLogin())
-                {
-                    if (login.ShowDialog() !=
+                    if (selectorModo.ShowDialog() !=
                         DialogResult.OK)
                     {
                         return;
                     }
+                }
+
+                FactoryDataAccess.Inicializar(
+                    ApplicationMode.CurrentMode);
+
+                if (ApplicationMode.UsesSqlServer)
+                {
+                    InicializadorNegocio.Inicializar();
+
+                    VerificarAdministradorInicial();
+                }
+
+                if (!MostrarLogin())
+                {
+                    return;
                 }
 
                 Application.Run(
@@ -63,6 +64,36 @@ namespace Edelstahl.WinApp
             finally
             {
                 SesionActual.Cerrar();
+
+                ApplicationMode.Reset();
+            }
+        }
+
+        private static void VerificarAdministradorInicial()
+        {
+            UsuarioService usuarioService =
+                new UsuarioService();
+
+            if (usuarioService.ExisteAdministrador())
+            {
+                return;
+            }
+
+            using (
+                FrmCrearAdministradorInicial configuracion =
+                    new FrmCrearAdministradorInicial())
+            {
+                configuracion.ShowDialog();
+            }
+        }
+
+        private static bool MostrarLogin()
+        {
+            using (FrmLogin login =
+                new FrmLogin())
+            {
+                return login.ShowDialog() ==
+                    DialogResult.OK;
             }
         }
     }

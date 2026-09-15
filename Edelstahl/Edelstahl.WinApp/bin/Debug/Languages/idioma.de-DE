@@ -85,3 +85,104 @@ Observaciones:Anmerkungen
 Si:Ja
 No:Nein
 RespaldoDatos:Datensicherung
+IniciarSesion:Anmelden
+NombreUsuario:Benutzername
+Contrasena:Passwort
+CerrarSesion:Abmelden
+UsuarioActual:Aktueller Benutzer
+Bienvenido:Willkommen
+CredencialesInvalidas:Benutzername oder Passwort ist falsch
+SeleccionarModoInicio:Startmodus auswählen
+IniciarConSqlServer:Mit SQL Server starten
+IniciarModoDemostracion:Demomodus starten
+SalirAplicacion:Anwendung beenden
+BaseDatosDisponible:Datenbank verfügbar
+BaseDatosNoDisponible:Datenbank nicht verfügbar
+ModoDemostracion:Demomodus
+BuscarClientes:Kunden suchen
+MostrarTodos:Alle anzeigen
+ClienteRequerido:Bitte wählen Sie einen Kunden aus
+ClienteNoEncontrado:Kunde nicht gefunden
+BusquedaSinResultados:Keine Ergebnisse gefunden
+ClienteDuplicado:Ein Kunde mit dieser Steuernummer ist bereits vorhanden
+ClienteRegistradoCorrectamente:Kunde erfolgreich registriert
+ActualizarListado:Liste aktualisieren
+SeleccionCliente:Kundenauswahl
+SeleccionPresupuesto:Angebotsauswahl
+RevisionProductos:Produktprüfung
+ValidacionCredito:Kreditprüfung
+RegistroSena:Anzahlung erfassen
+ResumenConfirmacion:Bestätigungsübersicht
+ResultadoOperacion:Vorgangsergebnis
+CreditoSuficiente:Kredit ausreichend
+CreditoInsuficiente:Kredit nicht ausreichend
+PresupuestoConfirmable:Angebot kann bestätigt werden
+PresupuestoNoConfirmable:Das Angebot kann nicht bestätigt werden
+ConfirmarGeneracionPedido:Möchten Sie die Bestellung bestätigen?
+ImportarClientes:Kunden importieren
+SeleccionarArchivo:Datei auswählen
+ArchivoSeleccionado:Datei ausgewählt
+ArchivoNoSeleccionado:Keine Datei ausgewählt
+RegistrosDetectados:Erkannte Datensätze
+RegistrosImportados:Importierte Datensätze
+RegistrosOmitidos:Übersprungene Datensätze
+ImportacionFinalizada:Import abgeschlossen
+ImportacionConErrores:Der Import wurde mit Fehlern abgeschlossen
+DatosProtegidos:Geschützte Daten
+CifradoSimetrico:Symmetrische Verschlüsselung
+CUITCifrado:Verschlüsselte Steuernummer
+ErrorDescifrado:Die Daten konnten nicht entschlüsselt werden
+IntegridadInvalida:Die Datenintegrität ist ungültig
+CrearRespaldo:Datensicherung erstellen
+RestaurarRespaldo:Datensicherung wiederherstellen
+SeleccionarDestino:Ziel auswählen
+RespaldoExitoso:Datensicherung erfolgreich abgeschlossen
+RestauracionExitosa:Wiederherstellung erfolgreich abgeschlossen
+ErrorBaseDatos:Datenbankfehler
+ConexionExitosa:Verbindung erfolgreich hergestellt
+PresupuestosDisponiblesCliente:Verfügbare Angebote für den ausgewählten Kunden
+Vencimiento:Gültig bis
+PresupuestosEncontrados:Gefundene Angebote
+NoPresupuestosEncontrados:Keine Angebote gefunden
+SeleccioneClientePrincipal:Wählen Sie im Hauptbereich einen Kunden aus
+ClienteInvalido:Ungültiger Kunde
+ClientePrimero:Bitte wählen Sie zuerst einen Kunden aus
+ErrorCargarPresupuestos:Die Angebote konnten nicht geladen werden
+PresupuestoRequerido:Bitte wählen Sie ein Angebot aus
+PresupuestoNoEncontrado:Das ausgewählte Angebot konnte nicht gefunden werden
+DetallePresupuestoNoConfirmable:Das ausgewählte Angebot kann nicht bestätigt werden. Es muss angenommen und gültig sein und Positionen enthalten
+EstadoPresupuesto_Borrador:Entwurf
+EstadoPresupuesto_Enviado:Gesendet
+EstadoPresupuesto_Aceptado:Angenommen
+EstadoPresupuesto_Vencido:Abgelaufen
+EstadoPresupuesto_Rechazado:Abgelehnt
+EstadoPresupuesto_ConvertidoEnPedido:In Bestellung umgewandelt
+DescripcionRegistrarSena:Geben Sie die genau erforderliche Anzahlung ein, um die Bestellung zu bestätigen
+SenaPendiente:Anzahlung ausstehend
+TransferenciaBancaria:Banküberweisung
+DepositoBancario:Bankeinzahlung
+Cheque:Scheck
+Efectivo:Barzahlung
+Tarjeta:Karte
+SenaNoRequerida:Keine Anzahlung erforderlich
+PresupuestoSinAnticipo:Für das ausgewählte Angebot ist keine Anzahlung erforderlich
+ImporteInsuficiente:Betrag nicht ausreichend
+MensajeImporteInsuficiente:Der erhaltene Betrag ist nicht ausreichend. Die erforderliche Anzahlung beträgt
+ImporteSuperior:Betrag über der erforderlichen Anzahlung
+MensajeImporteSuperior:Der erhaltene Betrag darf die erforderliche Anzahlung nicht überschreiten
+MedioPagoRequerido:Zahlungsmethode erforderlich
+DebeSeleccionarMedioPago:Bitte wählen Sie eine Zahlungsmethode aus
+ComprobanteRequerido:Beleg erforderlich
+ErrorGenerarComprobante:Die Belegnummer konnte nicht erstellt werden
+FechaIncorrecta:Ungültiges Datum
+FechaPagoFutura:Das Zahlungsdatum darf nicht in der Zukunft liegen
+SenaRegistradaCorrectamente:Anzahlung erfolgreich erfasst
+MensajeSenaRegistrada:Die Anzahlung wurde erfolgreich erfasst
+Importe:Betrag
+Comprobante:Beleg
+SubtituloLogin:Geben Sie Ihre Anmeldedaten ein, um fortzufahren
+MostrarContrasena:Passwort anzeigen
+AccesoDenegado:Zugriff verweigert
+DescripcionModoInicio:Wählen Sie aus, wie Edelstahl ERP ausgeführt werden soll
+DescripcionModoSql:Verwendet Datenbanken, Anmeldung, Protokollierung, Persistenz und Verschlüsselung der Steuernummer
+DescripcionModoDemo:Ermöglicht die Nutzung der Oberfläche mit temporären Daten ohne Verbindung zu SQL Server
